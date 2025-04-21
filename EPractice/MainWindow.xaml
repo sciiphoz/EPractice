@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Marathon Skills 2016" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color R="36" G="29" B="112" A="255"></Color>
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="2">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color R="36" G="29" B="112" A="255"></Color>
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Foreground="White" 
+                   FontFamily="Sans" FontWeight="SemiBold" FontSize="28">MARATHON SKILLS 2016</Label>
+            <Label HorizontalAlignment="Center" Foreground="White" Margin="0 0 0 -10" 
+                   FontFamily="Arial" FontStyle="Italic" FontSize="16" FontWeight="SemiBold">Москва, Россия</Label>
+            <Label HorizontalAlignment="Center" Foreground="White" 
+                   FontFamily="Arial" FontStyle="Italic" FontSize="16" FontWeight="SemiBold">среда 21 октября 2016</Label>
+        </StackPanel>
         
+        <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <Button HorizontalAlignment="Center" Width="280" Margin="20 20 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+                    FontFamily="Arial" FontSize="16">Я хочу стать бегуном</Button>
+            <Button HorizontalAlignment="Center" Width="280" Margin="20 0 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+                    FontFamily="Arial" FontSize="16">Я хочу стать спонсором бегуна</Button>
+            <Button HorizontalAlignment="Center" Width="280" Margin="20 0 20 10" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+                    FontFamily="Arial" FontSize="16">Я хочу узнать больше о событии</Button>
+            <Button HorizontalAlignment="Right" Width="70" Padding="5" Margin="0 0 10 20"
+                    FontFamily="Arial" FontSize="12">Login</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Foreground="White"
+                   FontFamily="Sans" FontSize="16" FontWeight="SemiBold">18 дней 8 часов и 17 минут до старта марафона!</Label>
+        </StackPanel>
     </Grid>
 </Window>
