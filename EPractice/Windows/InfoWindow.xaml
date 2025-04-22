@@ -7,6 +7,41 @@
         mc:Ignorable="d"
         Title="InfoWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color R="36" G="29" B="112" A="255"></Color>
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="2">
+            <Rectangle.Fill>
+                <SolidColorBrush>
+                    <SolidColorBrush.Color>
+                        <Color R="36" G="29" B="112" A="255"></Color>
+                    </SolidColorBrush.Color>
+                </SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Foreground="White" 
+                   FontFamily="Sans" FontWeight="SemiBold" FontSize="28">MARATHON SKILLS 2016</Label>
+        </StackPanel>
+
+        <Frame Grid.Row="1"></Frame>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Foreground="White"
+                   FontFamily="Sans" FontSize="16" FontWeight="SemiBold">18 дней 8 часов и 17 минут до старта марафона!</Label>
+        </StackPanel>
     </Grid>
 </Window>
