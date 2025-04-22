@@ -79,8 +79,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\SponsorPages\ConfirmSponsorPage.xaml.cs">
+      <DependentUpon>ConfirmSponsorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SponsorPages\SponsorPage.xaml.cs">
+      <DependentUpon>SponsorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\InfoWindow.xaml.cs">
       <DependentUpon>InfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\RunnerWindow.xaml.cs">
+      <DependentUpon>RunnerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SponsorWindow.xaml.cs">
+      <DependentUpon>SponsorWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -157,7 +169,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\SponsorPages\ConfirmSponsorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SponsorPages\SponsorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\InfoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\RunnerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SponsorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,7 +227,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\" />
+    <Folder Include="Pages\AdminPages\" />
+    <Folder Include="Pages\RunnerPages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DBConnection\DBModel.Context.tt">

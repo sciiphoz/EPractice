@@ -1,0 +1,87 @@
+﻿<Page x:Class="EPractice.Pages.SponsorPages.SponsorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EPractice.Pages.SponsorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SponsorPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label HorizontalAlignment="Center"
+                FontSize="24" FontFamily="Sans">Спонсор бегуна</Label>
+            <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" TextAlignment="Center"
+                FontSize="20" FontFamily="Arial">
+                Пожалуйста, выберите бегуна, которого вы хотели бы спонсировать и сумму, которую вы хотели бы спосировать. 
+                Спасибо за вашу поддержку бегунов и их благотворительных организаций.
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label HorizontalAlignment="Center"
+                   FontFamily="Sans" FontSize="20" FontWeight="SemiBold">Информация о спонсоре</Label>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalAlignment="Right" FontSize="18">Ваше имя:</Label>
+                    <Label HorizontalAlignment="Right" FontSize="18">Бегун:</Label>
+                    <Label HorizontalAlignment="Right" FontSize="18">Карта:</Label>
+                    <Label HorizontalAlignment="Right" FontSize="18">Номер карты#:</Label>
+                    <Label HorizontalAlignment="Right" FontSize="18">Срок действия:</Label>
+                    <Label HorizontalAlignment="Right" FontSize="18">CVC :</Label>
+                </StackPanel>
+                <StackPanel>
+                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 5 0 0"
+                             FontSize="18">Ваше имя</TextBox>
+                    <ComboBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 6 0 0"
+                              FontSize="18"></ComboBox>
+                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 6 0 0"
+                             FontSize="18">Владелец карты</TextBox>
+                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 8 0 0"
+                             FontSize="18">1234 1234 1234 1234</TextBox>
+                    <StackPanel Orientation="Horizontal" Margin="10 9 0 0">
+                        <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="30"
+                                 FontSize="18">01</TextBox>
+                        <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50"
+                                 FontSize="18">2017</TextBox>
+                    </StackPanel>
+                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="10 8 0 0"
+                             FontSize="18">123</TextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <StackPanel Orientation="Vertical" Margin="0 0 0 20">
+                <Label HorizontalAlignment="Center"
+                       FontFamily="Sans" FontSize="20" FontWeight="SemiBold">Благотворительность</Label>
+                <Label HorizontalAlignment="Center">Фонд кошек</Label>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0 0 0 20">
+                <Label HorizontalAlignment="Center"
+                   FontFamily="Sans" FontSize="20" FontWeight="SemiBold">Сумма пожертвования</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 40">
+                <Button Padding="10 5">-</Button>
+                <TextBox Margin="10 0" VerticalContentAlignment="Center" Padding="25 0">50</TextBox>
+                <Button Padding="10 5">+</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+                <Button Width="90" Margin="0 0 20 0" Padding="10 5">Заплатить</Button>
+                <Button Width="90" Padding="10 5">Отмена</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
