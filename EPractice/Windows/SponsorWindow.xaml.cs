@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Pages.SponsorPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,14 @@ namespace EPractice.Windows
         public SponsorWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new SponsorPage());
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

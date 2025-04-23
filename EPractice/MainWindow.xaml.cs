@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace EPractice
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void SponsorButton_Click(object sender, RoutedEventArgs e)
+        {
+            SponsorWindow sponsorWindow = new SponsorWindow();
+            sponsorWindow.Show();
+            Close();
         }
     }
 }

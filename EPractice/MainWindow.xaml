@@ -43,13 +43,13 @@
         </StackPanel>
         
         <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <Button HorizontalAlignment="Center" Width="280" Margin="20 20 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+            <Button x:Name="RunnerButton" HorizontalAlignment="Center" Width="280" Margin="20 20 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
                     FontFamily="Arial" FontSize="16">Я хочу стать бегуном</Button>
-            <Button HorizontalAlignment="Center" Width="280" Margin="20 0 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
-                    FontFamily="Arial" FontSize="16">Я хочу стать спонсором бегуна</Button>
-            <Button HorizontalAlignment="Center" Width="280" Margin="20 0 20 10" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+            <Button x:Name="SponsorButton" HorizontalAlignment="Center" Width="280" Margin="20 0 20 15" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
+                    FontFamily="Arial" FontSize="16" Click="SponsorButton_Click">Я хочу стать спонсором бегуна</Button>
+            <Button x:Name="AdminButton" HorizontalAlignment="Center" Width="280" Margin="20 0 20 10" Padding="0 20 0 20" BorderThickness="2" Background="#EBEBEB" Foreground="#505050" BorderBrush="#505050"
                     FontFamily="Arial" FontSize="16">Я хочу узнать больше о событии</Button>
-            <Button HorizontalAlignment="Right" Width="70" Padding="5" Margin="0 0 10 20"
+            <Button x:Name="LoginButton" HorizontalAlignment="Right" Width="70" Padding="5" Margin="0 0 10 20"
                     FontFamily="Arial" FontSize="12">Login</Button>
         </StackPanel>
 
