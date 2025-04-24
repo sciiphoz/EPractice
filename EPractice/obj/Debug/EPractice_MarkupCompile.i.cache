@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\
 EPractice
 none
 false
 DEBUG;TRACE
-C:\Users\212202\Desktop\EPractice\EPractice\App.xaml
-662951998
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\App.xaml
+11-1849032858
 2-1551598665
-30-122807459
-18865159999
-MainWindow.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\InfoWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
+35988468345
+18-1876307191
+MainWindow.xaml;Pages\AuthPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AdminWindow.xaml;Windows\AuthWindow.xaml;Windows\ControllerWindow.xaml;Windows\InfoWindow.xaml;Windows\RoleWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
 
 True
 

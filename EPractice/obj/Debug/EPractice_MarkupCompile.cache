@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\App.xaml
-662951998
+9184670225
 2-1551598665
-291959281159
+32-121712588
 18-1876307191
-MainWindow.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\InfoWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
+MainWindow.xaml;Pages\AuthPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AuthWindow.xaml;Windows\InfoWindow.xaml;Windows\RoleWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
 
 False
 

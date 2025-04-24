@@ -32,5 +32,24 @@ namespace EPractice
             sponsorWindow.Show();
             Close();
         }
+
+        private void RunnerButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = new RunnerWindow();
+            runnerWindow.Show();
+            Close();
+        }
+        private void InfoButton_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = new InfoWindow();
+            infoWindow.Show();
+            Close();
+        }
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+            Close();
+        }
     }
 }

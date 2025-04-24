@@ -20,10 +20,12 @@ namespace EPractice.Windows
     /// </summary>
     public partial class SponsorWindow : Window
     {
+        private int page;
         public SponsorWindow()
         {
             InitializeComponent();
             MainFrame.Navigate(new SponsorPage());
+            page = 0;
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)

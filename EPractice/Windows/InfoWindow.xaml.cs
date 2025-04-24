@@ -19,9 +19,11 @@ namespace EPractice.Windows
     /// </summary>
     public partial class InfoWindow : Window
     {
+        private int page;
         public InfoWindow()
         {
             InitializeComponent();
+            page = 0;
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)

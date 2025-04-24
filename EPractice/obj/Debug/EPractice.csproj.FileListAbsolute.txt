@@ -54,3 +54,9 @@ C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\EPractice.csproj.CoreCom
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\EPractice.csproj.Up2Date
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\EPractice.exe
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\EPractice.pdb
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\AuthPage.g.cs
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\AuthWindow.g.cs
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RoleWindow.g.cs
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\AuthPage.baml
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\AuthWindow.baml
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RoleWindow.baml
