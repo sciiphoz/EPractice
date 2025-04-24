@@ -27,12 +27,28 @@ namespace EPractice.Windows
             MainFrame.Navigate(new SponsorPage());
             page = 0;
         }
-
+        public void ConfirmSponsor()
+        {
+            MainFrame.Navigate(new ConfirmSponsorPage());
+            page = 1;
+        }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            Close();
+            switch (page)
+            {
+                case 0:
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    Close();
+                    break;
+                case 1:
+                    MainFrame.Navigate(new SponsorPage());
+                    page = 0;
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 }

@@ -78,8 +78,8 @@
                 <TextBox Margin="10 0" VerticalContentAlignment="Center" Padding="25 0">50</TextBox>
                 <Button Padding="10 5">+</Button>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
-                <Button Width="90" Margin="0 0 20 0" Padding="10 5">Заплатить</Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                <Button Width="90" Margin="0 0 20 0" Padding="10 5" Click="Button_Click">Заплатить</Button>
                 <Button Width="90" Padding="10 5">Отмена</Button>
             </StackPanel>
         </StackPanel>

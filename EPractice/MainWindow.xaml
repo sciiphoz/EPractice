@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EPractice"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Marathon Skills 2016" Height="450" Width="800">
+        Title="Marathon Skills 2016" Height="550" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>

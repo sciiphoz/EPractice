@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace EPractice.Pages.SponsorPages
     /// </summary>
     public partial class ConfirmSponsorPage : Page
     {
+        private SponsorWindow sponsorWindow;
         public ConfirmSponsorPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Window.GetWindow(this).Close();
         }
     }
 }

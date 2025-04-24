@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EPractice.Windows"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="SponsorWindow" Height="450" Width="800">
+        Title="SponsorWindow" Height="550" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -43,7 +43,7 @@
                    FontFamily="Sans" FontWeight="SemiBold" FontSize="28">MARATHON SKILLS 2016</Label>
         </StackPanel>
 
-        <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
 
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" Foreground="White"

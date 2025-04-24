@@ -9,6 +9,19 @@
       Title="ConfirmSponsorPage">
 
     <Grid>
-        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center"
+                FontSize="30" FontWeight="Bold" FontFamily="Sans">Спасибо за вашу спонсорскую поддержку!</Label>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" TextAlignment="Center"
+                       FontSize="26">Спасибо за поддержку бегуна в Marathon Skills 2016! Ваше пожертвование пойдет в его благотворительную организацию</TextBlock>
+            <Label HorizontalAlignment="Center"
+                   FontSize="30">Иван Прудов (204) из Russia</Label>
+            <Label HorizontalAlignment="Center"
+                   FontSize="32">Фонд кошек</Label>
+            <Label HorizontalAlignment="Center"
+                   FontSize="40" FontWeight="Bold">$50</Label>
+            <Button HorizontalAlignment="Center"
+                    FontSize="24" Padding="15 5" Margin="0 10 0 0" Click="Button_Click">Назад</Button>
+        </StackPanel>
     </Grid>
 </Page>
