@@ -79,8 +79,59 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AdminPages\EquipmentPage.xaml.cs">
+      <DependentUpon>EquipmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\OrgsPage.xaml.cs">
+      <DependentUpon>OrgsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\VolunteersPage.xaml.cs">
+      <DependentUpon>VolunteersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ControllerPages\RunnerInfoPage.xaml.cs">
+      <DependentUpon>RunnerInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ControllerPages\SponsorInfoPage.xaml.cs">
+      <DependentUpon>SponsorInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\BMIPage.xaml.cs">
+      <DependentUpon>BMIPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\BMRPage.xaml.cs">
+      <DependentUpon>BMRPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\ComparisonPage.xaml.cs">
+      <DependentUpon>ComparisonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\InfoButtonPage.xaml.cs">
+      <DependentUpon>InfoButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\OrgPage.xaml.cs">
+      <DependentUpon>OrgPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\PastResPage.xaml.cs">
+      <DependentUpon>PastResPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\MarathonRegConfirmPage.xaml.cs">
+      <DependentUpon>MarathonRegConfirmPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\MarathonRegPage.xaml.cs">
+      <DependentUpon>MarathonRegPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\MySponsorsPage.xaml.cs">
+      <DependentUpon>MySponsorsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\ResultsPage.xaml.cs">
+      <DependentUpon>ResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\RunnerRegPage.xaml.cs">
+      <DependentUpon>RunnerRegPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SponsorPages\ConfirmSponsorPage.xaml.cs">
       <DependentUpon>ConfirmSponsorPage.xaml</DependentUpon>
@@ -93,6 +144,9 @@
     </Compile>
     <Compile Include="Windows\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ContactsWindow.xaml.cs">
+      <DependentUpon>ContactsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\ControllerWindow.xaml.cs">
       <DependentUpon>ControllerWindow.xaml</DependentUpon>
@@ -184,7 +238,75 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AdminPages\EquipmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\OrgsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\VolunteersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ControllerPages\RunnerInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ControllerPages\SponsorInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\BMIPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\BMRPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\ComparisonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\InfoButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\OrgPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\PastResPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\MarathonRegConfirmPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\MarathonRegPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\MySponsorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\ResultsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\RunnerRegPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -201,6 +323,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AuthWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ContactsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -261,10 +387,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pages\AdminPages\" />
-    <Folder Include="Pages\RunnerPages\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DBConnection\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
