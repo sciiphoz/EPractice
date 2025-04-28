@@ -9,6 +9,93 @@
       Title="BMRPage">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         
+        <Label Grid.ColumnSpan="2" Content="BMR калькулятор" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" Margin="0 0 0 10">    
+                <Run Text="BMR (Basal Metabolic Rate) - это минимальное количество энергии, расходуемое человеческим организмом для поддержания собственной жизни в покое."/>
+                <LineBreak/>
+                <Run Text="BMR используется в качестве оценки для измерения метаболизма взрослого человека, который изменяется в зависимости от роста, веса, возраста и различных медицинских факторов."/>
+            </TextBlock>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 10">
+                <Border x:Name="MaleBorder" Width="100" Height="100" Margin="0,0,20,0" BorderThickness="3" BorderBrush="#00903E" CornerRadius="5" Cursor="Hand" MouseLeftButtonDown="GenderSelected">
+                    <Image Source="/Images/GenderImages/male-icon.png" Stretch="Uniform" Tag="Male"/>
+                </Border>
+                <Border x:Name="FemaleBorder" Width="100" Height="100" BorderThickness="2" BorderBrush="Transparent" CornerRadius="5" Cursor="Hand" MouseLeftButtonDown="GenderSelected">
+                    <Image Source="/Images/GenderImages/female-icon.png" Stretch="Uniform" Tag="Female"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,30">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Рост (см):" Margin="0 0 10 0" Width="50" VerticalAlignment="Center" />
+                    <TextBox x:Name="HeightTextBox" Height="30" Padding="5" Text="180" Width="50" TextAlignment="Center"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Вес (кг):" Margin="0 0 10 0" Width="50" VerticalAlignment="Center"/>
+                    <TextBox x:Name="WeightTextBox" Height="30" Padding="5" Text="70" Width="50" TextAlignment="Center"  />
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Возраст (лет):" Margin="0 0 10 0" Width="50" VerticalAlignment="Center" />
+                    <TextBox x:Name="AgeTextBox" Height="30" Padding="5" Text="30" Width="50" TextAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,30">
+                <Button Content="Рассчитать" Width="120" Height="40" Background="#00903E"
+                Foreground="White" FontWeight="Bold" Click="CalculateButton_Click" />
+                <Button Content="Отмена" Width="120" Height="40" Background="#FDC100"
+                Foreground="Black" FontWeight="Bold" Margin="20,0,0,0" Click="CancelButton_Click" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Ваш BMR" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+                <TextBlock x:Name="BMRTextBlock" Text="1,670" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Ежедневно тратится калорий" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                    <Button x:Name="InfoButton" Content="i" FontFamily="Segoe UI" FontWeight="Bold" HorizontalAlignment="Right" Width="30" Height="30" Background="#FDC100" BorderBrush="Transparent" Foreground="Black" Click="InfoButton_Click"  ToolTip="Информация об уровнях активности" />
+                </StackPanel>
+                
+                <StackPanel HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Сидячий:" Width="175" FontWeight="Bold" />
+                        <TextBlock x:Name="SedentaryTextBlock" Text="2,004"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Маленькая активность:" Width="175" FontWeight="Bold"/>
+                        <TextBlock x:Name="LightActivityTextBlock" Text="2,296"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Средняя активность:" Width="175" FontWeight="Bold"/>
+                        <TextBlock x:Name="ModerateActivityTextBlock" Text="2,589"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Сильная активность:" Width="175" FontWeight="Bold"/>
+                        <TextBlock x:Name="HeavyActivityTextBlock" Text="2,881"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Максимальная активность:" Width="175" FontWeight="Bold"/>
+                        <TextBlock x:Name="ExtremeActivityTextBlock" Text="3,173"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

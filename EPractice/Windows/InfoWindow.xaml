@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPractice.Windows"
         mc:Ignorable="d"
+        WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
         Title="InfoWindow" Height="550" Width="800">
     <Grid>
@@ -43,7 +44,7 @@
                    FontFamily="Sans" FontWeight="SemiBold" FontSize="28">MARATHON SKILLS 2016</Label>
         </StackPanel>
 
-        <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
 
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" Foreground="White"

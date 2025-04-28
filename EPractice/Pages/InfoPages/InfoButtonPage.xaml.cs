@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace EPractice.Pages.InfoPages
         public InfoButtonPage()
         {
             InitializeComponent();
+        }
+
+        private void BMIButton_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenBMI();
+        }
+
+        private void BMRButton_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenBMR();
         }
     }
 }

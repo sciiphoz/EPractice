@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EPractice"
         mc:Ignorable="d"
+        WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
         Title="Marathon Skills 2016" Height="550" Width="800">
     <Grid>

@@ -79,6 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DBConnection\Connection.cs" />
     <Compile Include="Pages\AdminPages\EquipmentPage.xaml.cs">
       <DependentUpon>EquipmentPage.xaml</DependentUpon>
     </Compile>
@@ -108,6 +109,9 @@
     </Compile>
     <Compile Include="Pages\InfoPages\InfoButtonPage.xaml.cs">
       <DependentUpon>InfoButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\MarathonSkillsPage.xaml.cs">
+      <DependentUpon>MarathonSkillsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\InfoPages\OrgPage.xaml.cs">
       <DependentUpon>OrgPage.xaml</DependentUpon>
@@ -278,6 +282,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\InfoPages\MarathonSkillsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\InfoPages\OrgPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -399,6 +407,7 @@
       <DependentUpon>DBModel.edmx</DependentUpon>
       <LastGenOutput>DBModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\MapPhotos\marathon-skills-2016-marathon-map.jpg" />
     <Resource Include="Images\Logo\logo-2016-full-colour.png" />
     <Resource Include="Images\Logo\logo-2016-monochrome.png" />
     <Resource Include="Images\CountryFlags\flag_andorra.png" />

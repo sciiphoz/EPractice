@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Pages.InfoPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,14 +24,54 @@ namespace EPractice.Windows
         public InfoWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new InfoButtonPage());
             page = 0;
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            Close();
+            switch (page)
+            {
+                case 0:
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    Close();
+                    break;
+                case 1:
+                    MainFrame.Navigate(new InfoButtonPage());
+                    page = 0;
+                    break;
+            }
+        }
+        public void OpenBMI()
+        {
+            MainFrame.Navigate(new BMIPage());
+            page = 1;
+        }
+        public void OpenBMR()
+        {
+            MainFrame.Navigate(new BMRPage());
+            page = 1;
+        }
+        public void OpenMarathonSkills()
+        {
+            MainFrame.Navigate(new MarathonSkillsPage());
+            page = 1;
+        }
+        public void OpenComparison()
+        {
+            MainFrame.Navigate(new ComparisonPage());
+            page = 1;
+        }
+        public void OpenOrganizations()
+        {
+            MainFrame.Navigate(new OrgPage());
+            page = 1;
+        }
+        public void OpenPastResults()
+        {
+            MainFrame.Navigate(new PastRes Page());
+            page = 1;
         }
     }
 }

@@ -17,7 +17,7 @@
                     <Button Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0">
                         <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Предыдущие результаты</TextBlock>
                     </Button>
-                    <Button Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0">BMI калькулятор</Button>
+                    <Button x:Name="BMIButton" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="BMIButton_Click">BMI калькулятор</Button>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial">
@@ -26,7 +26,7 @@
                     <Button Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0">
                         <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Список благотворительных организаций</TextBlock>
                     </Button>
-                    <Button Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0">BMR калькулятор</Button>
+                    <Button x:Name="BMRButton" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="BMRButton_Click">BMR калькулятор</Button>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

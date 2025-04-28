@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace EPractice.Pages.RunnerPages
         public RegistrationPage()
         {
             InitializeComponent();
+        }
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+            Window.GetWindow(this).Close();
         }
     }
 }
