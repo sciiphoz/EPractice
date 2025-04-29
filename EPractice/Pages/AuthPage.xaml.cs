@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EPractice.Windows;
 
 namespace EPractice.Pages
 {
@@ -23,6 +24,17 @@ namespace EPractice.Pages
         public AuthPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RoleWindow roleWindow = new RoleWindow();
+            roleWindow.ShowDialog();
+
+            if (roleWindow.DialogResult == true)
+            {
+                Window.GetWindow(this).Close();
+            }
         }
     }
 }

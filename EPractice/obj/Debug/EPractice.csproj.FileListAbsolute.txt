@@ -141,3 +141,9 @@ C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\RunnerPages\RunnerRe
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Windows\ContactsWindow.baml
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\InfoPages\MarathonSkillsPage.g.cs
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\InfoPages\MarathonSkillsPage.baml
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\AdminPages\AdminButtonPage.g.cs
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\ControllerPages\ControllerButtonPage.g.cs
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\RunnerPages\RunnerButtonPage.g.cs
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\AdminPages\AdminButtonPage.baml
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\ControllerPages\ControllerButtonPage.baml
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\RunnerPages\RunnerButtonPage.baml

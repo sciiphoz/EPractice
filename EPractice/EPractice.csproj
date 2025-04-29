@@ -80,6 +80,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DBConnection\Connection.cs" />
+    <Compile Include="Pages\AdminPages\AdminButtonPage.xaml.cs">
+      <DependentUpon>AdminButtonPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\EquipmentPage.xaml.cs">
       <DependentUpon>EquipmentPage.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,9 @@
     </Compile>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ControllerPages\ControllerButtonPage.xaml.cs">
+      <DependentUpon>ControllerButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ControllerPages\RunnerInfoPage.xaml.cs">
       <DependentUpon>RunnerInfoPage.xaml</DependentUpon>
@@ -133,6 +139,9 @@
     </Compile>
     <Compile Include="Pages\RunnerPages\ResultsPage.xaml.cs">
       <DependentUpon>ResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RunnerPages\RunnerButtonPage.xaml.cs">
+      <DependentUpon>RunnerButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RunnerPages\RunnerRegPage.xaml.cs">
       <DependentUpon>RunnerRegPage.xaml</DependentUpon>
@@ -242,6 +251,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AdminPages\AdminButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\EquipmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -255,6 +268,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\AuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ControllerPages\ControllerButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -311,6 +328,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RunnerPages\ResultsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerPages\RunnerButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

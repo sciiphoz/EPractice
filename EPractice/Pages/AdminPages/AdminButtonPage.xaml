@@ -1,0 +1,25 @@
+﻿<Page x:Class="EPractice.Pages.AdminPages.AdminButtonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EPractice.Pages.AdminPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminButtonPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold" FontFamily="Sans" Margin="0 0 0 45">Меню координатора</Label>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 30">
+                <Button Width="350" Height="75" FontSize="24" Margin="0 0 15 0" FontFamily="Arial" FontStyle="Italic">Волонтеры</Button>
+                <Button Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic">Инвентарь</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic">
+                    <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Благотворительные организации</TextBlock></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

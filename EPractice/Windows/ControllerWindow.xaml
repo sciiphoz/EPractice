@@ -47,8 +47,8 @@
         <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
 
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label HorizontalAlignment="Center" Foreground="White"
-       FontFamily="Sans" FontSize="16" FontWeight="SemiBold">18 дней 8 часов и 17 минут до старта марафона!</Label>
+            <TextBlock x:Name="TimeLeftTB" HorizontalAlignment="Center" Foreground="White"
+       FontFamily="Sans" FontSize="16" FontWeight="SemiBold">18 дней 8 часов и 17 минут до старта марафона!</TextBlock>
         </StackPanel>
     </Grid>
 </Window>

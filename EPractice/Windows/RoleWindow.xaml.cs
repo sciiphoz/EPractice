@@ -23,5 +23,33 @@ namespace EPractice.Windows
         {
             InitializeComponent();
         }
+
+        private void RunnerButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = new RunnerWindow();
+            runnerWindow.Show();    
+            DialogResult = true;
+            Close();
+
+            runnerWindow.OpenButtonPage();
+        }
+        private void ControllerButton_Click(object sender, RoutedEventArgs e)
+        {
+            ControllerWindow controllerWindow = new ControllerWindow();
+            controllerWindow.Show();
+            DialogResult = true;
+            Close();
+
+            controllerWindow.OpenButtonPage();
+        }
+        private void AdminButton_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWindow adminWindow = new AdminWindow();
+            adminWindow.Show();
+            DialogResult = true;
+            Close();
+
+            adminWindow.OpenButtonPage();
+        }
     }
 }

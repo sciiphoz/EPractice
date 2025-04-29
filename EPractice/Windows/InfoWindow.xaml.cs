@@ -1,4 +1,5 @@
-﻿using EPractice.Pages.InfoPages;
+﻿using EPractice.Pages.ControllerPages;
+using EPractice.Pages.InfoPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace EPractice.Windows
 {
@@ -26,6 +28,7 @@ namespace EPractice.Windows
             InitializeComponent();
             MainFrame.Navigate(new InfoButtonPage());
             page = 0;
+            StartTimer();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -40,6 +43,8 @@ namespace EPractice.Windows
                 case 1:
                     MainFrame.Navigate(new InfoButtonPage());
                     page = 0;
+                    break;
+                default:
                     break;
             }
         }
@@ -70,8 +75,41 @@ namespace EPractice.Windows
         }
         public void OpenPastResults()
         {
-            MainFrame.Navigate(new PastRes Page());
+            MainFrame.Navigate(new PastResPage());
             page = 1;
+        }
+
+        private DispatcherTimer timer;
+        private DateTime marathonStartDate;
+
+        private void UpdateTimeLeft()
+        {
+            TimeSpan timeLeft = marathonStartDate - DateTime.Now;
+            if (timeLeft.TotalMilliseconds <= 0)
+            {
+                TimeLeftTB.Text = "Марафон уже начался!";
+                timer.Stop();
+            }
+            else
+            {
+                TimeLeftTB.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов и {timeLeft.Minutes} минут до старта марафона!";
+            }
+        }
+
+        private void StartTimer()
+        {
+            marathonStartDate = new DateTime(2025, 05, 14, 14, 0, 0);
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            UpdateTimeLeft();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            UpdateTimeLeft();
         }
     }
 }

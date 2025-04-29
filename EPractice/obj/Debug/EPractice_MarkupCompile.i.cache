@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\212202\Desktop\EPractice\EPractice\App.xaml
-301107962913
+331849831842
 2-1551598665
-551669773650
+581615590501
 18865159999
-MainWindow.xaml;Pages\AdminPages\EquipmentPage.xaml;Pages\AdminPages\OrgsPage.xaml;Pages\AdminPages\VolunteersPage.xaml;Pages\AuthPage.xaml;Pages\ControllerPages\RunnerInfoPage.xaml;Pages\ControllerPages\SponsorInfoPage.xaml;Pages\InfoPages\BMIPage.xaml;Pages\InfoPages\BMRPage.xaml;Pages\InfoPages\ComparisonPage.xaml;Pages\InfoPages\InfoButtonPage.xaml;Pages\InfoPages\MarathonSkillsPage.xaml;Pages\InfoPages\OrgPage.xaml;Pages\InfoPages\PastResPage.xaml;Pages\RunnerPages\MarathonRegConfirmPage.xaml;Pages\RunnerPages\MarathonRegPage.xaml;Pages\RunnerPages\MySponsorsPage.xaml;Pages\RunnerPages\RegistrationPage.xaml;Pages\RunnerPages\ResultsPage.xaml;Pages\RunnerPages\RunnerRegPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AdminWindow.xaml;Windows\AuthWindow.xaml;Windows\ContactsWindow.xaml;Windows\ControllerWindow.xaml;Windows\InfoWindow.xaml;Windows\RoleWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
+MainWindow.xaml;Pages\AdminPages\AdminButtonPage.xaml;Pages\AdminPages\EquipmentPage.xaml;Pages\AdminPages\OrgsPage.xaml;Pages\AdminPages\VolunteersPage.xaml;Pages\AuthPage.xaml;Pages\ControllerPages\ControllerButtonPage.xaml;Pages\ControllerPages\RunnerInfoPage.xaml;Pages\ControllerPages\SponsorInfoPage.xaml;Pages\InfoPages\BMIPage.xaml;Pages\InfoPages\BMRPage.xaml;Pages\InfoPages\ComparisonPage.xaml;Pages\InfoPages\InfoButtonPage.xaml;Pages\InfoPages\MarathonSkillsPage.xaml;Pages\InfoPages\OrgPage.xaml;Pages\InfoPages\PastResPage.xaml;Pages\RunnerPages\MarathonRegConfirmPage.xaml;Pages\RunnerPages\MarathonRegPage.xaml;Pages\RunnerPages\MySponsorsPage.xaml;Pages\RunnerPages\RegistrationPage.xaml;Pages\RunnerPages\ResultsPage.xaml;Pages\RunnerPages\RunnerButtonPage.xaml;Pages\RunnerPages\RunnerRegPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AdminWindow.xaml;Windows\AuthWindow.xaml;Windows\ContactsWindow.xaml;Windows\ControllerWindow.xaml;Windows\InfoWindow.xaml;Windows\RoleWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
 
-False
+True
 

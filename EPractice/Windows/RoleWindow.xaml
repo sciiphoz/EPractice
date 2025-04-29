@@ -11,9 +11,9 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" FontSize="24" FontFamily="Sans" FontWeight="Bold">Для тестирования</Label>
-            <Button Width="200" FontSize="16" Margin="0 15 0 0">Бегун</Button>
-            <Button Width="200" FontSize="16" Margin="0 15 0 0">Контроллёр</Button>
-            <Button Width="200" FontSize="16" Margin="0 15 0 0">Админ</Button>
+            <Button x:Name="RunnerButton" Width="200" FontSize="16" Margin="0 15 0 0" Click="RunnerButton_Click">Бегун</Button>
+            <Button x:Name="ControllerButton" Width="200" FontSize="16" Margin="0 15 0 0" Click="ControllerButton_Click">Контроллёр</Button>
+            <Button x:Name="AdminButton" Width="200" FontSize="16" Margin="0 15 0 0" Click="AdminButton_Click">Админ</Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -31,5 +31,12 @@ namespace EPractice.Pages.RunnerPages
             authWindow.Show();
             Window.GetWindow(this).Close();
         }
+
+        private void OldButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = Window.GetWindow(this) as RunnerWindow;
+
+            runnerWindow.OpenAuth();
+        }
     }
 }

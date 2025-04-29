@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace EPractice.Windows
 {
@@ -26,6 +27,7 @@ namespace EPractice.Windows
             InitializeComponent();
             MainFrame.Navigate(new SponsorPage());
             page = 0;
+            StartTimer();
         }
         public void ConfirmSponsor()
         {
@@ -48,7 +50,38 @@ namespace EPractice.Windows
                 default:
                     break;
             }
+        }
+        private DispatcherTimer timer;
+        private DateTime marathonStartDate;
 
+        private void UpdateTimeLeft()
+        {
+            TimeSpan timeLeft = marathonStartDate - DateTime.Now;
+            if (timeLeft.TotalMilliseconds <= 0)
+            {
+                TimeLeftTB.Text = "Марафон уже начался!";
+                timer.Stop();
+            }
+            else
+            {
+                TimeLeftTB.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов и {timeLeft.Minutes} минут до старта марафона!";
+            }
+        }
+
+        private void StartTimer()
+        {
+            marathonStartDate = new DateTime(2025, 05, 14, 14, 0, 0);
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+            UpdateTimeLeft();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            UpdateTimeLeft();
         }
     }
 }
