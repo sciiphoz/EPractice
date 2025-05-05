@@ -24,5 +24,9 @@ namespace EPractice.Pages.RunnerPages
         {
             InitializeComponent();
         }
+        private void BtnOk_Click(object sender, RoutedEventArgs e)
+        {
+            //NavigationService.Navigate(new MenuBeguna());
+        }
     }
 }

@@ -9,6 +9,46 @@
       Title="SponsorInfoPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Отсортировать:" FontWeight="Bold" Margin="0,0,10,0"/>
+                <ComboBox x:Name="SortComboBox" Width="200" SelectionChanged="SortComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Итоговая сумма" Tag="TotalAmount" IsSelected="True"/>
+                    <ComboBoxItem Content="Название организации" Tag="CharityName"/>
+                    <ComboBoxItem Content="Количество спонсоров" Tag="SponsorsCount"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Благотворительные организации:" FontWeight="Bold" Margin="0,0,5,0"/>
+                <TextBlock x:Name="CharitiesCountText" Text="0"/>
+
+                <TextBlock Text="Всего спонсорских взносов:" FontWeight="Bold" Margin="20,0,5,0"/>
+                <TextBlock x:Name="TotalAmountText" Text="$0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <DataGrid x:Name="SponsorsGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False"
+          CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True"
+          HeadersVisibility="Column" GridLinesVisibility="All"
+          ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Логотип" Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding LogoPath}" Width="50" Height="50" Stretch="Uniform"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding CharityName}" Width="*"/>
+                <DataGridTextColumn Header="Сумма" Binding="{Binding TotalAmount, StringFormat=C}" Width="Auto"/>
+                <DataGridTextColumn Header="Количество спонсоров" Binding="{Binding SponsorsCount}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

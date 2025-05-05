@@ -9,6 +9,91 @@
       Title="RunnerInfoPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Статус:" Grid.Column="0" Grid.Row="0" Margin="0,0,5,0"/>
+            <ComboBox x:Name="StatusComboBox" Grid.Column="1" Grid.Row="0" Margin="0,0,10,5" Width="200"
+                SelectionChanged="Filters_SelectionChanged">
+                <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
+                <ComboBoxItem Content="Registered" Tag="Registered"/>
+                <ComboBoxItem Content="Payment Confirmed" Tag="Payment Confirmed"/>
+                <ComboBoxItem Content="Race Kit Sent" Tag="Race Kit Sent"/>
+                <ComboBoxItem Content="Race Attended" Tag="Race Attended"/>
+            </ComboBox>
+
+            <Label Content="Дистанция:" Grid.Column="0" Grid.Row="1" Margin="0,5,5,0"/>
+            <ComboBox x:Name="DistanceComboBox" Grid.Column="1" Grid.Row="1" Margin="0,5,10,0" Width="200"
+                SelectionChanged="Filters_SelectionChanged">
+                <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
+                <ComboBoxItem Content="42km полный марафон" Tag="Full"/>
+                <ComboBoxItem Content="21km полумарафон" Tag="Half"/>
+                <ComboBoxItem Content="5km мини-марафон" Tag="Mini"/>
+            </ComboBox>
+
+            <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" HorizontalAlignment="Right">
+                <Button Content="Детальная информация (CSV)"
+                Background="#FFFDC100" Click="ExportDetailsButton_Click" Width="200" Height="30" Margin="0,0,0,5"/>
+                <Button Content="E-mail список"
+                Background="#FFFDC100" Click="ExportEmailsButton_Click" Width="200" Height="30"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="20,10,20,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10">
+                <Label Content="Сортировать:" Margin="0,0,5,0"/>
+                <ComboBox x:Name="SortComboBox" Width="150" SelectionChanged="SortComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Имя" Tag="FirstName"/>
+                    <ComboBoxItem Content="Фамилия" Tag="LastName"/>
+                    <ComboBoxItem Content="Email" Tag="Email"/>
+                    <ComboBoxItem Content="Статус" Tag="Status"/>
+                </ComboBox>
+                <Button Content="Обновить" 
+                Background="#FFFDC100" Click="RefreshButton_Click" Width="100" Height="30" Margin="10,0,0,0"/>
+            </StackPanel>
+
+            <TextBlock x:Name="TotalRunnersText" Grid.Row="0" Text="Total runners: 0" HorizontalAlignment="Right"/>
+
+            <DataGrid x:Name="RunnersGrid" Grid.Row="1" AutoGenerateColumns="False" 
+              CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True"
+              HeadersVisibility="Column" BorderThickness="1" GridLinesVisibility="All"
+              ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                    <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="*"/>
+                    <DataGridTemplateColumn Header="Действия" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Редактировать" 
+                                Background="#FFFDC100" Tag="{Binding RunnerId}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <TextBlock x:Name="NoResultsText" Grid.Row="1" Text="Нет бегунов, соответствующих критериям поиска." 
+               Visibility="Collapsed" TextAlignment="Center" VerticalAlignment="Center" FontStyle="Italic"/>
+        </Grid>
     </Grid>
 </Page>

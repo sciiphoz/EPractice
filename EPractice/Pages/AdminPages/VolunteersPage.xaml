@@ -9,6 +9,68 @@
       Title="VolunteersPage">
 
     <Grid>
-        
+        <StackPanel Margin="20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+                <TextBlock
+            VerticalAlignment="Center"
+            Margin="0,0,10,0"
+            FontSize="14"
+            FontWeight="Bold"
+            Text="Сортировать по:" />
+
+                <ComboBox
+            x:Name="SortComboBox"
+            Width="120"
+            Height="30"
+            Margin="0,0,20,0"
+            SelectedIndex="0"
+            SelectionChanged="SortComboBox_SelectionChanged">
+                    <ComboBoxItem Content="Фамилии" />
+                    <ComboBoxItem Content="Имени" />
+                    <ComboBoxItem Content="Стране" />
+                    <ComboBoxItem Content="Полу" />
+                </ComboBox>
+
+                <Button
+            x:Name="ImportButton"
+            Width="180"
+            Height="40"
+            Margin="10,0,0,0"
+            Background="#00903E"
+            Click="ImportButton_Click"
+            Content="Загрузка волонтеров"
+            FontWeight="Bold"
+            Foreground="White" />
+
+                <Button
+            Width="120"
+            Height="40"
+            Margin="20,0,0,0"
+            Background="#FDC100"
+            Click="RefreshButton_Click"
+            Content="Обновить"
+            FontWeight="Bold"
+            Foreground="Black" />
+            </StackPanel>
+
+            <TextBlock
+        x:Name="VolunteerCountText"
+        HorizontalAlignment="Left"
+        Margin="20,0,0,10"
+        FontSize="14"
+        FontWeight="Bold"
+        Text="Всего волонтеров: 0" />
+
+            <ListView x:Name="VolunteersListView" BorderThickness="0" Height="300">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Фамилия" Width="150" DisplayMemberBinding="{Binding LastName}" />
+                        <GridViewColumn Header="Имя" Width="150" DisplayMemberBinding="{Binding FirstName}" />
+                        <GridViewColumn Header="Страна" Width="150" DisplayMemberBinding="{Binding CountryCode}" />
+                        <GridViewColumn Header="Пол" Width="100" DisplayMemberBinding="{Binding Gender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
     </Grid>
 </Page>

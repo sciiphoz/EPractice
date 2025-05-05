@@ -79,15 +79,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\UserInfo.cs" />
     <Compile Include="DBConnection\Connection.cs" />
     <Compile Include="Pages\AdminPages\AdminButtonPage.xaml.cs">
       <DependentUpon>AdminButtonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminPages\EquipmentArrivalPage.xaml.cs">
+      <DependentUpon>EquipmentArrivalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\EquipmentPage.xaml.cs">
       <DependentUpon>EquipmentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AdminPages\OrgsPage.xaml.cs">
+    <Compile Include="Pages\AdminPages\ImagePathConverter.cs" />
+    <Compile Include="Pages\AdminPages\OrgEditPage.xaml.cs">
+      <DependentUpon>OrgEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\OrgsManagmentPage.xaml.cs">
+      <DependentUpon>OrgsManagmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InfoPages\OrgsPage.xaml.cs">
       <DependentUpon>OrgsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\VolunteerImportPage.xaml.cs">
+      <DependentUpon>VolunteerImportPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminPages\VolunteersPage.xaml.cs">
       <DependentUpon>VolunteersPage.xaml</DependentUpon>
@@ -119,11 +133,12 @@
     <Compile Include="Pages\InfoPages\MarathonSkillsPage.xaml.cs">
       <DependentUpon>MarathonSkillsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\InfoPages\OrgPage.xaml.cs">
-      <DependentUpon>OrgPage.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Pages\InfoPages\NameToImageConverter.cs" />
     <Compile Include="Pages\InfoPages\PastResPage.xaml.cs">
       <DependentUpon>PastResPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InteractiveMapPage.xaml.cs">
+      <DependentUpon>InteractiveMapPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RunnerPages\MarathonRegConfirmPage.xaml.cs">
       <DependentUpon>MarathonRegConfirmPage.xaml</DependentUpon>
@@ -158,6 +173,9 @@
     <Compile Include="Windows\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CharityWindow.xaml.cs">
+      <DependentUpon>CharityWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ContactsWindow.xaml.cs">
       <DependentUpon>ContactsWindow.xaml</DependentUpon>
     </Compile>
@@ -166,9 +184,6 @@
     </Compile>
     <Compile Include="Windows\InfoWindow.xaml.cs">
       <DependentUpon>InfoWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\RoleWindow.xaml.cs">
-      <DependentUpon>RoleWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\RunnerWindow.xaml.cs">
       <DependentUpon>RunnerWindow.xaml</DependentUpon>
@@ -255,11 +270,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AdminPages\EquipmentArrivalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\EquipmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\AdminPages\OrgsPage.xaml">
+    <Page Include="Pages\AdminPages\OrgEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\OrgsManagmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InfoPages\OrgsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\VolunteerImportPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -303,11 +334,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\InfoPages\OrgPage.xaml">
+    <Page Include="Pages\InfoPages\PastResPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\InfoPages\PastResPage.xaml">
+    <Page Include="Pages\InteractiveMapPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -355,6 +386,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\CharityWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ContactsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -364,10 +399,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\InfoWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\RoleWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,5 @@
 ﻿using EPractice.Pages;
+using EPractice.Pages.InfoPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,8 @@ namespace EPractice.Windows
         public AuthWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AuthPage());
+            //MainFrame.Navigate(new AuthPage());
+            MainFrame.Navigate(new ComparisonPage());
             page = 0;
             StartTimer();
         }

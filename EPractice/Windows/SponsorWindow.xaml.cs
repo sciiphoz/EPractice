@@ -1,4 +1,5 @@
-﻿using EPractice.Pages.SponsorPages;
+﻿using EPractice.Classes;
+using EPractice.Pages.SponsorPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -82,6 +83,13 @@ namespace EPractice.Windows
         private void Timer_Tick(object sender, EventArgs e)
         {
             UpdateTimeLeft();
+        }
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            CurrentUser.Email = null;
+            Close();
         }
     }
 }

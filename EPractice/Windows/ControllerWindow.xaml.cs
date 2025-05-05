@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using EPractice.Classes;
 using EPractice.Pages.ControllerPages;
 using EPractice.Pages.RunnerPages;
 
@@ -93,6 +94,13 @@ namespace EPractice.Windows
         private void Timer_Tick(object sender, EventArgs e)
         {
             UpdateTimeLeft();
+        }
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            CurrentUser.Email = null;
+            Close();
         }
     }
 }

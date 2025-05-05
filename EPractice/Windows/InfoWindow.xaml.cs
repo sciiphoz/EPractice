@@ -1,4 +1,5 @@
-﻿using EPractice.Pages.ControllerPages;
+﻿using EPractice.Classes;
+using EPractice.Pages.ControllerPages;
 using EPractice.Pages.InfoPages;
 using System;
 using System.Collections.Generic;
@@ -70,7 +71,7 @@ namespace EPractice.Windows
         }
         public void OpenOrganizations()
         {
-            MainFrame.Navigate(new OrgPage());
+            MainFrame.Navigate(new OrgsPage());
             page = 1;
         }
         public void OpenPastResults()
@@ -110,6 +111,13 @@ namespace EPractice.Windows
         private void Timer_Tick(object sender, EventArgs e)
         {
             UpdateTimeLeft();
+        }
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            CurrentUser.Email = null;
+            Close();
         }
     }
 }

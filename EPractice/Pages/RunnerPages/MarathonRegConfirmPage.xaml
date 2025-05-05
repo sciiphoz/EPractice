@@ -9,6 +9,11 @@
       Title="MarathonRegConfirmPage">
 
     <Grid>
-        
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Спасибо за вашу регистрацию в качестве бегуна!" FontFamily="Open Sans Light" FontSize="20" HorizontalAlignment="Center" Height="53" TextWrapping="Wrap" TextAlignment="Center" Width="344"/>
+            <TextBlock Text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2025!" TextWrapping="Wrap"  HorizontalAlignment="Center"  FontFamily="Arial" FontSize="14" Width="560" TextAlignment="Center" Height="19" Margin="0,10,0,0"/>
+            <TextBlock Text="С вами свяжутся по поводу оплаты." TextWrapping="Wrap"  HorizontalAlignment="Center"  FontFamily="Arial" FontSize="14" Width="560" TextAlignment="Center" Height="20" Margin="0,10,0,0"/>
+            <Button x:Name="BtnOk" FontFamily="Open Sans Light" Background="#FFFDC100" Content="OK" Width="63" Height="34" Margin="20" Click="BtnOk_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

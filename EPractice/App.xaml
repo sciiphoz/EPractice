@@ -11,5 +11,14 @@
                 </Style>
             </Style.Resources>
         </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="PasswordChar" Value="•"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

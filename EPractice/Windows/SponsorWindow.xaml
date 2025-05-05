@@ -38,7 +38,10 @@
             <Button Margin="5" Padding="5"
                     x:Name="ExitButton" Click="ExitButton_Click">Назад</Button>
         </StackPanel>
-         
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Button Margin="5 0 15 0" Padding="5" x:Name="LogOutButton" Click="LogOutButton_Click">LogOut</Button>
+        </StackPanel>
+
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <Label HorizontalAlignment="Center" Foreground="White" 
                    FontFamily="Sans" FontWeight="SemiBold" FontSize="28">MARATHON SKILLS 2016</Label>

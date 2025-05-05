@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\
 EPractice
 none
 false
 DEBUG;TRACE
-C:\Users\212202\Desktop\EPractice\EPractice\App.xaml
-331849831842
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\App.xaml
+37-1582454882
 2-1551598665
-581615590501
-18865159999
-MainWindow.xaml;Pages\AdminPages\AdminButtonPage.xaml;Pages\AdminPages\EquipmentPage.xaml;Pages\AdminPages\OrgsPage.xaml;Pages\AdminPages\VolunteersPage.xaml;Pages\AuthPage.xaml;Pages\ControllerPages\ControllerButtonPage.xaml;Pages\ControllerPages\RunnerInfoPage.xaml;Pages\ControllerPages\SponsorInfoPage.xaml;Pages\InfoPages\BMIPage.xaml;Pages\InfoPages\BMRPage.xaml;Pages\InfoPages\ComparisonPage.xaml;Pages\InfoPages\InfoButtonPage.xaml;Pages\InfoPages\MarathonSkillsPage.xaml;Pages\InfoPages\OrgPage.xaml;Pages\InfoPages\PastResPage.xaml;Pages\RunnerPages\MarathonRegConfirmPage.xaml;Pages\RunnerPages\MarathonRegPage.xaml;Pages\RunnerPages\MySponsorsPage.xaml;Pages\RunnerPages\RegistrationPage.xaml;Pages\RunnerPages\ResultsPage.xaml;Pages\RunnerPages\RunnerButtonPage.xaml;Pages\RunnerPages\RunnerRegPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AdminWindow.xaml;Windows\AuthWindow.xaml;Windows\ContactsWindow.xaml;Windows\ControllerWindow.xaml;Windows\InfoWindow.xaml;Windows\RoleWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
+65-2050759820
+18-1876307191
+MainWindow.xaml;Pages\AdminPages\AdminButtonPage.xaml;Pages\AdminPages\EquipmentArrivalPage.xaml;Pages\AdminPages\EquipmentPage.xaml;Pages\AdminPages\OrgEditPage.xaml;Pages\AdminPages\OrgsManagmentPage.xaml;Pages\InfoPages\OrgsPage.xaml;Pages\AdminPages\VolunteerImportPage.xaml;Pages\AdminPages\VolunteersPage.xaml;Pages\AuthPage.xaml;Pages\ControllerPages\ControllerButtonPage.xaml;Pages\ControllerPages\RunnerInfoPage.xaml;Pages\ControllerPages\SponsorInfoPage.xaml;Pages\InfoPages\BMIPage.xaml;Pages\InfoPages\BMRPage.xaml;Pages\InfoPages\ComparisonPage.xaml;Pages\InfoPages\InfoButtonPage.xaml;Pages\InfoPages\MarathonSkillsPage.xaml;Pages\InfoPages\PastResPage.xaml;Pages\InteractiveMapPage.xaml;Pages\RunnerPages\MarathonRegConfirmPage.xaml;Pages\RunnerPages\MarathonRegPage.xaml;Pages\RunnerPages\MySponsorsPage.xaml;Pages\RunnerPages\RegistrationPage.xaml;Pages\RunnerPages\ResultsPage.xaml;Pages\RunnerPages\RunnerButtonPage.xaml;Pages\RunnerPages\RunnerRegPage.xaml;Pages\SponsorPages\ConfirmSponsorPage.xaml;Pages\SponsorPages\SponsorPage.xaml;Windows\AdminWindow.xaml;Windows\AuthWindow.xaml;Windows\CharityWindow.xaml;Windows\ContactsWindow.xaml;Windows\ControllerWindow.xaml;Windows\InfoWindow.xaml;Windows\RunnerWindow.xaml;Windows\SponsorWindow.xaml;
 
 True
 

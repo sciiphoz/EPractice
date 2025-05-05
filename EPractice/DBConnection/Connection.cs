@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EPractice.DBConnection
 {
-    internal class Connection
+    public class Connection
     {
         public static MarathonEntities marathonEntities = new MarathonEntities();
     }

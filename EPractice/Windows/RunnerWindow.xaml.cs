@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using EPractice.Classes;
 using EPractice.Pages;
 using EPractice.Pages.ControllerPages;
 using EPractice.Pages.RunnerPages;
@@ -64,6 +65,10 @@ namespace EPractice.Windows
             MainFrame.Navigate(new MarathonRegPage());
             page = 1;
         }
+        public void OpenMarathonRegConfirm()
+        {
+            MainFrame.Navigate(new MarathonRegConfirmPage());
+        }
         public void OpenRunnerInfo()
         {
             MainFrame.Navigate(new RunnerInfoPage());
@@ -110,6 +115,14 @@ namespace EPractice.Windows
         private void Timer_Tick(object sender, EventArgs e)
         {
             UpdateTimeLeft();
+        }
+
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            CurrentUser.Email = null;
+            Close();
         }
     }
 }
