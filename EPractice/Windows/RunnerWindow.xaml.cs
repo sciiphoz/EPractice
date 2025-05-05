@@ -50,6 +50,11 @@ namespace EPractice.Windows
                     break;
             }
         }
+        public void OpenRegistrationPage()
+        {
+            MainFrame.Navigate(new RegistrationPage());
+            page = 0;
+        }
         public void OpenMySponsors()
         {
             MainFrame.Navigate(new MySponsorsPage());
@@ -68,6 +73,12 @@ namespace EPractice.Windows
         public void OpenMarathonRegConfirm()
         {
             MainFrame.Navigate(new MarathonRegConfirmPage());
+            page = 1;
+        }
+        public void OpenRunnerRegisterPage()
+        {
+            MainFrame.Navigate(new RunnerRegPage());
+            page = 0;
         }
         public void OpenRunnerInfo()
         {
@@ -76,12 +87,15 @@ namespace EPractice.Windows
         }
         public void OpenAuth()
         {
-            MainFrame.Navigate(new AuthPage());
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+            Close();
         }
 
         public void OpenButtonPage()
         {
             MainFrame.Navigate(new RunnerButtonPage());
+            page = 0;
         }
 
         private DispatcherTimer timer;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,11 +40,9 @@ namespace EPractice.Pages.InfoPages
         {
             selectedGender = gender;
 
-            // Сброс выделения
             MaleBorder.BorderBrush = Brushes.Transparent;
             FemaleBorder.BorderBrush = Brushes.Transparent;
 
-            // Выделение выбранного пола
             if (gender == "Male")
             {
                 MaleBorder.BorderBrush = Brushes.Black;
@@ -69,17 +68,13 @@ namespace EPractice.Pages.InfoPages
                 return;
             }
 
-            // Переводим рост в метры
             double heightM = heightCm / 100;
 
-            // Рассчитываем BMI
             double bmi = weightKg / (heightM * heightM);
             bmi = Math.Round(bmi, 1);
 
-            // Отображаем результат
             BMITextBlock.Text = bmi.ToString();
 
-            // Определяем категорию
             string category;
             string iconName;
 
@@ -106,27 +101,23 @@ namespace EPractice.Pages.InfoPages
 
             BMICategoryText.Text = category;
 
-            // Загружаем соответствующую иконку
             try
             {
                 BMIResultIcon.Source = new BitmapImage(
-                    new Uri($"/Resources/BMI/{iconName}", UriKind.Relative));
+                    new Uri($"pack://application:,,,/Images/BMIImages/{iconName}"));
             }
             catch
             {
                 BMIResultIcon.Source = null;
             }
 
-            // Позиционируем стрелку на шкале
             UpdateBMIArrowPosition(bmi);
         }
 
         private void UpdateBMIArrowPosition(double bmi)
         {
-            // Ширина шкалы (примерно 400px)
             double scaleWidth = 400;
 
-            // Позиционируем стрелку в зависимости от значения BMI
             double position;
 
             if (bmi < 18.5)
@@ -151,7 +142,6 @@ namespace EPractice.Pages.InfoPages
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            // Сброс значений
             HeightTextBox.Text = "170";
             WeightTextBox.Text = "70";
             BMITextBlock.Text = "0.0";
@@ -163,7 +153,9 @@ namespace EPractice.Pages.InfoPages
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenButtonsPage();
         }
     }
 }

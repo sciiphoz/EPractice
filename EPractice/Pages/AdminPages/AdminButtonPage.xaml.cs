@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace EPractice.Pages.AdminPages
         public AdminButtonPage()
         {
             InitializeComponent();
+        }
+
+        private void EquipBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWindow adminWindow = Window.GetWindow(this) as AdminWindow;
+            adminWindow.OpenEquipment();
+        }
+
+        private void OrgsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWindow adminWindow = Window.GetWindow(this) as AdminWindow;
+            adminWindow.OpenOrganizations();
+        }
+
+        private void VolunteerBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminWindow adminWindow = Window.GetWindow(this) as AdminWindow;
+            adminWindow.OpenVolunteers();
         }
     }
 }

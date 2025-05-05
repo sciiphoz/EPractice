@@ -25,12 +25,17 @@ namespace EPractice.DBConnection
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<BMI> BMI { get; set; }
         public virtual DbSet<Charity> Charity { get; set; }
         public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Event> Event { get; set; }
         public virtual DbSet<EventType> EventType { get; set; }
         public virtual DbSet<Gender> Gender { get; set; }
+        public virtual DbSet<HowLong> HowLong { get; set; }
+        public virtual DbSet<InventoryItem> InventoryItem { get; set; }
+        public virtual DbSet<KitItem> KitItem { get; set; }
         public virtual DbSet<Marathon> Marathon { get; set; }
+        public virtual DbSet<Position> Position { get; set; }
         public virtual DbSet<RaceKitOption> RaceKitOption { get; set; }
         public virtual DbSet<Registration> Registration { get; set; }
         public virtual DbSet<RegistrationEvent> RegistrationEvent { get; set; }
@@ -38,7 +43,8 @@ namespace EPractice.DBConnection
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Runner> Runner { get; set; }
         public virtual DbSet<Sponsorship> Sponsorship { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Staff> Staff { get; set; }
+        public virtual DbSet<Timesheet> Timesheet { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Volunteer> Volunteer { get; set; }
     }

@@ -39,5 +39,33 @@ namespace EPractice.Pages.InfoPages
 
             infoWindow.OpenBMR();
         }
+
+        private void MarathonBtn_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenMarathonSkills();
+        }
+
+        private void PastResultsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenPastResults();
+        }
+
+        private void ComparisonBtn_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenComparison();
+        }
+
+        private void OrgsListBtn_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+
+            infoWindow.OpenOrganizations();
+        }
     }
 }

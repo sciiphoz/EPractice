@@ -8,8 +8,12 @@
             <Style.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="6"></Setter>
+                    <Setter Property="BorderBrush" Value="#3A32C7"></Setter>
                 </Style>
             </Style.Resources>
+
+            <Setter Property="Background" Value="#3A32C7"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
         </Style>
 
         <Style TargetType="TextBox">

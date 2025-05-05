@@ -1,4 +1,5 @@
 ﻿using EPractice.DBConnection;
+using EPractice.Windows;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -56,27 +57,10 @@ namespace EPractice.Pages.RunnerPages
             }
         }
 
-        private void PassTxt_GotFocus(object sender, RoutedEventArgs e)
-        {
-            PasEnterLabel.Visibility = Visibility.Hidden;
-        }
-
-        private void PassTxt_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(PassTxt.Password))
-            {
-                PasEnterLabel.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigationService.Navigate(new HomePage());
-        }
-
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new HomePage());
+            RunnerWindow runnerWindow = new RunnerWindow();
+            runnerWindow.OpenRegistrationPage();
         }
 
         private void BtnFile_Click(object sender, RoutedEventArgs e)
@@ -104,119 +88,106 @@ namespace EPractice.Pages.RunnerPages
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
-            //if (NameTxt.Text == "Имя")
-            //{
-            //    MessageBox.Show("Введите имя!");
-            //    return;
-            //}
-            //if (SecondNameTxt.Text == "Фамилия")
-            //{
-            //    MessageBox.Show("Введите фамилию!");
-            //    return;
-            //}
-            //if (EmailTxt.Text == "Email")
-            //{
-            //    MessageBox.Show("Введите ваш email!");
-            //    return;
-            //}
-            //if (string.IsNullOrEmpty(PassTxt.Password))
-            //{
-            //    MessageBox.Show("Введите ваш пароль!");
-            //    return;
-            //}
-            //if (PassCheckTxt.Password != PassTxt.Password)
-            //{
-            //    MessageBox.Show("Вы не подтвердили пароль!");
-            //    return;
-            //}
-            //if (ImagePathTxt.Text == "Photo_logo.jpg" && ImagePathTxt.Foreground == System.Windows.Media.Brushes.Gray)
-            //{
-            //    MessageBox.Show("Выберите фото!");
-            //    return;
-            //}
-            //if (BirthDate.SelectedDate == null)
-            //{
-            //    MessageBox.Show("Выберите дату рождения!");
-            //    return;
-            //}
-            //if (CmbxCountry.SelectedIndex == 77 && CmbxCountry.Foreground == System.Windows.Media.Brushes.Gray)
-            //{
-            //    MessageBox.Show("Выберите страну!");
-            //    return;
-            //}
-            //if (CmbxGender.SelectedIndex == 0 && CmbxGender.Foreground == System.Windows.Media.Brushes.Gray)
-            //{
-            //    MessageBox.Show("Выберите ваш пол!");
-            //    return;
-            //}
-            //string email = EmailTxt.Text;
-            //string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
-            //Regex regex = new Regex(pattern);
-            //bool isValid = regex.IsMatch(email);
-            //if (!isValid)
-            //{
-            //    MessageBox.Show("Email не соответствует формату!");
-            //    return;
-            //}
-            //if (PassTxt.Password.Length < 6)
-            //{
-            //    MessageBox.Show("Пароль слишком короткий!");
-            //    return;
-            //}
-            //if (!PassTxt.Password.Any(char.IsUpper))
-            //{
-            //    MessageBox.Show("В пароле нет прописных символов!");
-            //    return;
-            //}
-            //if (!PassTxt.Password.Any(char.IsDigit))
-            //{
-            //    MessageBox.Show("В пароле нет цифр!");
-            //    return;
-            //}
-            //string anotherPattern = @"[!@$#%^]";
-            //Regex anRegex = new Regex(anotherPattern);
-            //if (!anRegex.IsMatch(PassTxt.Password))
-            //{
-            //    MessageBox.Show("В пароле нет спецсимволов!\n(!, @, #, $, %, ^)");
-            //    return;
-            //}
-            //if (age < 10)
-            //{
-            //    MessageBox.Show("Для участия в марафоне необходимо быть в возрасте 10 лет и старше!");
-            //    return;
-            //}
-            //Runner rn = new Runner();
-            //User user = new User();
-            //user.Email = email;
-            //user.Password = PassTxt.Password;
-            //user.FirstName = NameTxt.Text;
-            //user.LastName = SecondNameTxt.Text;
-            //user.RoleId = "R";
-            //rn.Email = email;
-            //Gender selGen = CmbxGender.SelectedItem as Gender;
-            //rn.Gender = selGen.Gender1;
-            //rn.DateOfBirth = BirthDate.SelectedDate;
-            //Country SelectedCountry = CmbxCountry.SelectedItem as Country;
-            //rn.CountryCode = SelectedCountry.CountryCode;
-            //rn.Image = imageBytes;
-            //Connection.marathonEntities.User.Add(user);
-            //Connection.marathonEntities.Runner.Add(rn);
-            //Connection.marathonEntities.SaveChanges();
-            //MessageBox.Show("Вы успешно зарегистрировались!");
-            return;
-        }
-
-        private void PassCheckTxt_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(PassCheckTxt.Password))
+            if (NameTxt.Text == "Имя")
             {
-                PassCheckEnterLabel.Visibility = Visibility.Visible;
+                MessageBox.Show("Введите имя!");
+                return;
             }
-        }
-
-        private void PassCheckTxt_GotFocus(object sender, RoutedEventArgs e)
-        {
-            PassCheckEnterLabel.Visibility = Visibility.Hidden;
+            if (SecondNameTxt.Text == "Фамилия")
+            {
+                MessageBox.Show("Введите фамилию!");
+                return;
+            }
+            if (EmailTxt.Text == "Email")
+            {
+                MessageBox.Show("Введите ваш email!");
+                return;
+            }
+            if (string.IsNullOrEmpty(PassTxt.Password))
+            {
+                MessageBox.Show("Введите ваш пароль!");
+                return;
+            }
+            if (PassCheckTxt.Password != PassTxt.Password)
+            {
+                MessageBox.Show("Вы не подтвердили пароль!");
+                return;
+            }
+            if (ImagePathTxt.Text == "Photo_logo.jpg" && ImagePathTxt.Foreground == System.Windows.Media.Brushes.Gray)
+            {
+                MessageBox.Show("Выберите фото!");
+                return;
+            }
+            if (BirthDate.SelectedDate == null)
+            {
+                MessageBox.Show("Выберите дату рождения!");
+                return;
+            }
+            if (CmbxCountry.SelectedIndex == 77 && CmbxCountry.Foreground == System.Windows.Media.Brushes.Gray)
+            {
+                MessageBox.Show("Выберите страну!");
+                return;
+            }
+            if (CmbxGender.SelectedIndex == 0 && CmbxGender.Foreground == System.Windows.Media.Brushes.Gray)
+            {
+                MessageBox.Show("Выберите ваш пол!");
+                return;
+            }
+            string email = EmailTxt.Text;
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(email);
+            if (!isValid)
+            {
+                MessageBox.Show("Email не соответствует формату!");
+                return;
+            }
+            if (PassTxt.Password.Length < 6)
+            {
+                MessageBox.Show("Пароль слишком короткий!");
+                return;
+            }
+            if (!PassTxt.Password.Any(char.IsUpper))
+            {
+                MessageBox.Show("В пароле нет прописных символов!");
+                return;
+            }
+            if (!PassTxt.Password.Any(char.IsDigit))
+            {
+                MessageBox.Show("В пароле нет цифр!");
+                return;
+            }
+            string anotherPattern = @"[!@$#%^]";
+            Regex anRegex = new Regex(anotherPattern);
+            if (!anRegex.IsMatch(PassTxt.Password))
+            {
+                MessageBox.Show("В пароле нет спецсимволов!\n(!, @, #, $, %, ^)");
+                return;
+            }
+            if (age < 10)
+            {
+                MessageBox.Show("Для участия в марафоне необходимо быть в возрасте 10 лет и старше!");
+                return;
+            }
+            Runner rn = new Runner();
+            User user = new User();
+            user.Email = email;
+            user.Password = PassTxt.Password;
+            user.FirstName = NameTxt.Text;
+            user.LastName = SecondNameTxt.Text;
+            user.RoleId = "R";
+            rn.Email = email;
+            Gender selGen = CmbxGender.SelectedItem as Gender;
+            rn.Gender = selGen.Gender1;
+            rn.DateOfBirth = BirthDate.SelectedDate;
+            Country SelectedCountry = CmbxCountry.SelectedItem as Country;
+            rn.CountryCode = SelectedCountry.CountryCode;
+            rn.Image = imageBytes;
+            Connection.marathonEntities.User.Add(user);
+            Connection.marathonEntities.Runner.Add(rn);
+            Connection.marathonEntities.SaveChanges();
+            MessageBox.Show("Вы успешно зарегистрировались!");
+            return;
         }
 
         private void NameTxt_GotFocus(object sender, RoutedEventArgs e)

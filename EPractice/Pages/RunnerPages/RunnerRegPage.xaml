@@ -9,42 +9,34 @@
       Title="RunnerRegPage">
 
     <Grid>
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="640" Height="440" Grid.RowSpan="2">
-            <Label Content="Регистрация бегуна" HorizontalAlignment="Center" FontFamily="Open Sans SemiBold" FontSize="24" Height="48"></Label>
-            <TextBlock Text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться в качестве бегуна" HorizontalAlignment="Center" Width="477" FontFamily="Open Sans Light" FontWeight="Light" TextWrapping="Wrap" TextAlignment="Center" FontSize="14"></TextBlock>
-            <StackPanel Orientation="Horizontal" Height="269">
-                <StackPanel Orientation="Vertical" Width="290">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="Email:" Grid.Column="0" VerticalAlignment="Center" Height="30"/>
-                        <TextBox x:Name="EmailTxt" Text="Enter your email address" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="EmailTxt_GotFocus" LostFocus="EmailTxt_LostFocus" Width="240"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+            <Label Content="Регистрация бегуна" HorizontalAlignment="Center" FontFamily="Sans" FontWeight="SemiBold" FontSize="24" Height="48"></Label>
+            <TextBlock Text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться в качестве бегуна" HorizontalAlignment="Center" FontFamily="Sans" FontWeight="Light" TextWrapping="Wrap" TextAlignment="Center" FontSize="20"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Email:" Grid.Column="0" VerticalAlignment="Center" Margin="0 0 88.7 0" />
+                        <TextBox HorizontalAlignment="Right" x:Name="EmailTxt" Width="225" Height="25" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="EmailTxt_GotFocus" LostFocus="EmailTxt_LostFocus" />
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label  Content="Пароль:" Grid.Column="0" VerticalAlignment="Center" Height="30"/>
-                        <Grid>
-                            <PasswordBox x:Name="PassTxt" Margin="10,5,-221,3" Height="25" GotFocus="PassTxt_GotFocus" LostFocus="PassTxt_LostFocus"/>
-                            <Label x:Name="PasEnterLabel" Content="Пароль" VerticalAlignment="Center" Height="30" FontSize="14" FontStyle="Italic" Background="Transparent" Foreground="#FF878787" IsHitTestVisible="False" Margin="10,0,-68,0" RenderTransformOrigin="0.106,0.533"/>
-                        </Grid>
-
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Пароль:" Grid.Column="0" VerticalAlignment="Center" Margin="0 0 76 0" />
+                        <PasswordBox x:Name="PassTxt" Width="225" Height="25" GotFocus="PassTxt_GotFocus" LostFocus="PassTxt_LostFocus"></PasswordBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label  Content="Повторите пароль:" VerticalAlignment="Top" Height="30" Margin="0" Grid.ColumnSpan="2" Grid.Row="2"/>
-                        <Grid>
-                            <PasswordBox x:Name="PassCheckTxt" Margin="10,5,170,3" Height="25" GotFocus="PassCheckTxt_GotFocus" LostFocus="PassCheckTxt_LostFocus"/>
-                            <Label x:Name="PassCheckEnterLabel" Content="Повторите пароль" HorizontalAlignment="Left" VerticalAlignment="Center" Width="313" Height="30" FontSize="14" FontStyle="Italic" Background="Transparent" Foreground="#FF878787" IsHitTestVisible="False" Margin="10,0,0,0"/>
-                        </Grid>
-
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Повторите пароль:" VerticalAlignment="Center" Margin="0 0 15 0" />
+                        <PasswordBox x:Name="PassCheckTxt" Width="225" Height="25" GotFocus="PassCheckTxt_GotFocus" LostFocus="PassCheckTxt_LostFocus"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="Имя:" Grid.Column="0" VerticalAlignment="Center" Height="30"/>
-                        <TextBox x:Name="NameTxt" Text="Имя" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="NameTxt_GotFocus" LostFocus="NameTxt_LostFocus" Width="240"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Имя:" Grid.Column="0" VerticalAlignment="Center" Margin="0 0 93.5 0" />
+                        <TextBox x:Name="NameTxt" Width="225" Height="25" FontSize="14" Background="White" Foreground="#FF878787" GotFocus="NameTxt_GotFocus" LostFocus="NameTxt_LostFocus" />
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="Фамилия:" Grid.Column="0" VerticalAlignment="Center" Height="30"/>
-                        <TextBox x:Name="SecondNameTxt" Text="Фамилия" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="SecondNameTxt_GotFocus" LostFocus="SecondNameTxt_LostFocus" Width="240"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Фамилия:" Grid.Column="0" VerticalAlignment="Center" Margin="0 0 67.6 0" />
+                        <TextBox x:Name="SecondNameTxt" Width="225" Height="25" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="SecondNameTxt_GotFocus" LostFocus="SecondNameTxt_LostFocus" />
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Height="26">
-                        <Label Content="Пол:"/>
-                        <ComboBox x:Name="CmbxGender" Width="134" Foreground="Gray" SelectedIndex="0" GotFocus="CmbxGender_GotFocus">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
+                        <Label Content="Пол:" Margin="0 0 95 0"/>
+                        <ComboBox x:Name="CmbxGender" Width="225" Height="25" Foreground="Gray" SelectedIndex="0" GotFocus="CmbxGender_GotFocus">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
                                     <TextBlock Text="{Binding Gender1}"/>
@@ -67,9 +59,9 @@
 
                     </Grid>
                     <Label Content="Фото файл:"/>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox x:Name="ImagePathTxt" Text="Photo_logo.jpg" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="EmailTxt_GotFocus" LostFocus="EmailTxt_LostFocus" Height="30" Width="183"/>
-                        <Button x:Name="BtnFile" Margin="20,0,0,0" Content="Просмотр..." FontFamily="Open Sans Light" Background="#FFFDC100" Height="36" Width="102" Click="BtnFile_Click"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBox x:Name="ImagePathTxt" Text="Photo_logo.jpg" FontSize="14" FontStyle="Italic" Background="White" Foreground="#FF878787" GotFocus="EmailTxt_GotFocus" LostFocus="EmailTxt_LostFocus" Height="30" Width="175"/>
+                        <Button x:Name="BtnFile" Margin="20 0 0 0" Content="Просмотр..." FontFamily="Sans Light" Height="35" Width="100" Click="BtnFile_Click"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="Дата рождения:"/>
@@ -87,10 +79,9 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Width="232" Height="60">
-                <Button Content="Регистрация"  FontFamily="Open Sans Light" Click="RegButton_Click" Width="100" Height="35" Margin="0,15,30,0" Background="#FFFDC100"/>
-                <Button Content="Отмена"  FontFamily="Open Sans Light" Click="CancelButton_Click" Width="100" Height="35" Margin="0,15,30,0" Background="#FFFDC100"/>
-
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                <Button Content="Регистрация" FontFamily="Sans" FontWeight="SemiBold" Click="RegButton_Click" Width="150" Height="35" Margin="0 0 25 0" />
+                <Button Content="Отмена" FontFamily="Sans" FontWeight="SemiBold" Click="CancelButton_Click" Width="150" Height="35" />
             </StackPanel>
         </StackPanel>
     </Grid>

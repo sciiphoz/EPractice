@@ -50,7 +50,7 @@ namespace EPractice.Windows
                     }
                     else
                     {
-                        var uri = new Uri($"pack://application:,,,/uhebnia_praktika_mubar_321;component/materials/{_fund.CharityLogo}");
+                        var uri = new Uri($"pack://application:,,,/uhebnia_praktika_mubar_321;component/materials/{_charity.CharityLogo}");
                         var logoImage = new BitmapImage(uri);
                         LogoEllipse.Fill = new ImageBrush(logoImage);
                     }

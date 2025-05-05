@@ -48,7 +48,7 @@
         <Image Grid.Column="6" HorizontalAlignment="Left" Height="85" Margin="0,5,0,0" Grid.Row="8" VerticalAlignment="Top" Width="100" Grid.RowSpan="4" Grid.ColumnSpan="2"/>
         <Rectangle Grid.Column="1" Grid.Row="2" Grid.RowSpan="10" Stroke="Black" Grid.ColumnSpan="7">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/Info/marathon-skills-2016-marathon-map.jpg"/>
+                <ImageBrush ImageSource="/Images/MapPhotos/marathon-skills-2016-marathon-map.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
         <Button Name="btnCheck1" Content="1" Grid.Column="7" Margin="8,8,17,3" Grid.Row="2" Click="btnCheck1_Click">

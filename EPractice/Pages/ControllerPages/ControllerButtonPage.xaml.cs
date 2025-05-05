@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EPractice.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace EPractice.Pages.ControllerPages
         public ControllerButtonPage()
         {
             InitializeComponent();
+        }
+
+        private void RunnersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ControllerWindow controllerWindow = Window.GetWindow(this) as ControllerWindow;
+            controllerWindow.OpenRunnerInfo();
+        }
+
+        private void SponsorsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ControllerWindow controllerWindow = Window.GetWindow(this) as ControllerWindow;
+            controllerWindow.OpenSponsorInfo();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace EPractice.DBConnection
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public RaceKitOption()
         {
+            this.KitItem = new HashSet<KitItem>();
             this.Registration = new HashSet<Registration>();
         }
     
@@ -24,6 +25,8 @@ namespace EPractice.DBConnection
         public string RaceKitOption1 { get; set; }
         public decimal Cost { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<KitItem> KitItem { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Registration> Registration { get; set; }
     }

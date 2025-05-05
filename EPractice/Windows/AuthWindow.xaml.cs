@@ -27,8 +27,8 @@ namespace EPractice.Windows
         public AuthWindow()
         {
             InitializeComponent();
-            //MainFrame.Navigate(new AuthPage());
-            MainFrame.Navigate(new ComparisonPage());
+            MainFrame.Navigate(new AuthPage());
+            //MainFrame.Navigate(new ComparisonPage());
             page = 0;
             StartTimer();
         }
@@ -49,6 +49,13 @@ namespace EPractice.Windows
                 default:
                     break;
             }
+        }
+
+        public void OpenMainWindow()
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
 
         private DispatcherTimer timer;

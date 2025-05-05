@@ -49,6 +49,11 @@ namespace EPractice.Windows
                     break;
             }
         }
+        public void OpenButtonsPage()
+        {
+            MainFrame.Navigate(new InfoButtonPage());
+            page = 0;
+        }
         public void OpenBMI()
         {
             MainFrame.Navigate(new BMIPage());

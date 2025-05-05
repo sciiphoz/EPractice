@@ -13,11 +13,11 @@
             <Label HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold" FontFamily="Sans" Margin="0 0 0 45">Меню координатора</Label>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 30">
-                <Button Width="350" Height="75" FontSize="24" Margin="0 0 15 0" FontFamily="Arial" FontStyle="Italic">Волонтеры</Button>
-                <Button Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic">Инвентарь</Button>
+                <Button x:Name="VolunteerBtn" Width="350" Height="75" FontSize="24" Margin="0 0 15 0" FontFamily="Arial" FontStyle="Italic" Click="VolunteerBtn_Click">Волонтеры</Button>
+                <Button x:Name="EquipBtn" Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic" Click="EquipBtn_Click">Инвентарь</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Button Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic">
+                <Button x:Name="OrgsBtn" Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic" Click="OrgsBtn_Click">
                     <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Благотворительные организации</TextBlock></Button>
             </StackPanel>
         </StackPanel>

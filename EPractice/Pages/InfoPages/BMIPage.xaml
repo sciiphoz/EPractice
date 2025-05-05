@@ -53,11 +53,11 @@
                 <Button Content="Отмена" Width="120" Height="40" Background="#FDC100" Foreground="Black" FontWeight="Bold" Margin="20,0,0,0" Click="CancelButton_Click"/>
             </StackPanel>
         </StackPanel>
-        
-        <StackPanel Grid.Column="1">
+
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <StackPanel>
 
-                    <Image x:Name="BMIResultIcon" Width="80" Height="80" Stretch="Uniform"/>
+                    <Image x:Name="BMIResultIcon" Width="160" Height="160" Stretch="Uniform"/>
 
                     <TextBlock x:Name="BMITextBlock" Text="0.0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
 

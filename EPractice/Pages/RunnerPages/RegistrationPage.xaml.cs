@@ -38,5 +38,12 @@ namespace EPractice.Pages.RunnerPages
 
             runnerWindow.OpenAuth();
         }
+
+        private void NewButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = Window.GetWindow(this) as RunnerWindow;
+
+            runnerWindow.OpenRunnerRegisterPage();
+        }
     }
 }

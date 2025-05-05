@@ -35,11 +35,10 @@
         </Rectangle>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button Margin="5" Padding="5"
-                    x:Name="ExitButton" Click="ExitButton_Click">Назад</Button>
+            <Button Margin="20 0 0 0" Padding="5" Width="75" Height="30" x:Name="ExitButton" Click="ExitButton_Click" FontFamily="Arial" FontWeight="Bold" Foreground="White" Background="#3A32C7" BorderBrush="#3A32C7">Назад</Button>
         </StackPanel>
         <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Button Margin="5 0 15 0" Padding="5" x:Name="LogOutButton" Click="LogOutButton_Click">LogOut</Button>
+            <Button Margin="0 0 20 0" Padding="5" Width="75" Height="30" x:Name="LogOutButton" Click="LogOutButton_Click" FontFamily="Arial" FontWeight="Bold" Foreground="White" Background="#3A32C7" BorderBrush="#3A32C7">LogOut</Button>
         </StackPanel>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
