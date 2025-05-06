@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EPractice.Windows;
 
 namespace EPractice.Pages.RunnerPages
 {
@@ -24,6 +25,29 @@ namespace EPractice.Pages.RunnerPages
         {
             InitializeComponent();
         }
-        
+
+        private void MarathonRegButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = Window.GetWindow(this) as RunnerWindow;
+            runnerWindow.OpenMarathonReg();
+        }
+
+        private void MyResultsButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = Window.GetWindow(this) as RunnerWindow;
+            runnerWindow.OpenResults();
+        }
+
+        private void MySponsorsButton_Click(object sender, RoutedEventArgs e)
+        {
+            RunnerWindow runnerWindow = Window.GetWindow(this) as RunnerWindow;
+            runnerWindow.OpenMySponsors();
+        }
+
+        private void ContactsButton_Click(object sender, RoutedEventArgs e)
+        {
+            ContactsWindow contactsWindow = new ContactsWindow();
+            contactsWindow.ShowDialog();
+        }
     }
 }

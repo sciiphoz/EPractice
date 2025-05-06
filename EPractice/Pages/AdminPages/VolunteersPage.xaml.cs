@@ -1,18 +1,10 @@
-﻿using EPractice.DBConnection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using EPractice.DBConnection;
 
 namespace EPractice.Pages.AdminPages
 {
@@ -21,44 +13,44 @@ namespace EPractice.Pages.AdminPages
     /// </summary>
     public partial class VolunteersPage : Page
     {
+        MarathonEntities _context = new MarathonEntities();
         public VolunteersPage()
         {
             InitializeComponent();
-            LoadVolunteers();
+            VolunteersListView.ItemsSource = _context.Volunteer.ToList();
         }
 
         private void LoadVolunteers(string sortBy = "LastName")
         {
             try
             {
-                if (VolunteersListView == null) // Дополнительная проверка
-                {
-                    MessageBox.Show("ListView не инициализирован", "Ошибка",
-                        MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-
-                IQueryable<Volunteer> query = Connection.marathonEntities.Volunteer;
+                var volunteers = new List<Volunteer>();
 
                 switch (sortBy)
                 {
                     case "FirstName":
-                        query = query.OrderBy(v => v.FirstName);
+                        volunteers = _context.Volunteer.OrderBy(v => v.FirstName).ToList();
                         break;
                     case "CountryCode":
-                        query = query.OrderBy(v => v.CountryCode);
+                        volunteers = _context.Volunteer.OrderBy(v => v.CountryCode).ToList();
                         break;
                     case "Gender":
-                        query = query.OrderBy(v => v.Gender);
+                        volunteers = _context.Volunteer.OrderBy(v => v.Gender).ToList();
                         break;
-                    default: // LastName
-                        query = query.OrderBy(v => v.LastName);
+                    default:
+                        volunteers = _context.Volunteer.OrderBy(v => v.LastName).ToList();
                         break;
                 }
 
-                var volunteers = query.ToList();
-                VolunteersListView.ItemsSource = volunteers;
-                VolunteerCountText.Text = $"Всего волонтеров: {volunteers.Count}";
+                if (VolunteersListView == null)
+                {
+                    Console.WriteLine();
+                }
+                else
+                {
+                    VolunteersListView.ItemsSource = volunteers;
+                    VolunteerCountText.Text = $"Всего волонтеров: {volunteers.Count}";
+                }
             }
             catch (Exception ex)
             {

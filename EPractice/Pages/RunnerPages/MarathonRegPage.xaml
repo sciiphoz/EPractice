@@ -10,7 +10,7 @@
 
     <Grid>
         <ScrollViewer Grid.Row="1" Padding="20">
-            <StackPanel Width="700" HorizontalAlignment="Center">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="Регистрация на марафон"
                    FontSize="24"
                    FontWeight="Bold"
@@ -19,6 +19,7 @@
 
                 <TextBlock Text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться на Skills Marathon 2025 проводимом в Москве, Russia. С вами свяжутся после регистрации для уточнения оплаты и другой информации."
                    TextWrapping="Wrap"
+                           FontSize="16"
                    TextAlignment="Center"
                    Margin="0,0,0,30"/>
 
@@ -30,6 +31,7 @@
 
                     <StackPanel Grid.Column="0" Margin="0,0,284,0" Grid.ColumnSpan="2">
                         <TextBlock Text="Вид марафона"
+                                   FontSize="16"
                            FontWeight="Bold"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,10"/>
@@ -47,40 +49,46 @@
                         </ItemsControl>
 
                         <TextBlock Text="Детали спонсорства"
+                                   FontSize="16"
                            FontWeight="Bold"
                            HorizontalAlignment="Center"
                            Margin="0,20,0,10"/>
 
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock Text="Благотворительный фонд:" 
-                               VerticalAlignment="Center"
-                               Margin="0,0,10,0"/>
+                                       FontSize="16"
+                                VerticalAlignment="Center"
+                                Margin="0,0,10,0"/>
                             <ComboBox x:Name="CmbxFond"
-                             Width="180"
-                             DisplayMemberPath="CharityName"
-                             SelectedValuePath="CharityId"/>
+                                VerticalContentAlignment="Center"
+                                Width="180"
+                                DisplayMemberPath="CharityName"
+                                SelectedValuePath="CharityId"/>
                             <Button x:Name="FondInfoBtn"
-                            Width="30"
-                            Height="30"
-                            Margin="5,0,0,0"
-                            Content="i"
-                            Click="Fond_Click" />
+                                Width="30"
+                                Height="30"
+                                Margin="5,0,0,0"
+                                Content="i"
+                                Click="Fond_Click" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10,0,0">
                             <TextBlock Text="Сумма взноса:" 
-                               VerticalAlignment="Center"
-                               Margin="0,0,10,0"/>
+                                VerticalAlignment="Center"
+                                       FontSize="16"
+                                Margin="0,0,10,0"/>
                             <TextBox x:Name="TxtSum"
-                             Width="100"
-                             Text="$500"
-                             GotFocus="NameTxt_GotFocus"
-                             LostFocus="NameTxt_LostFocus"/>
+                                Width="100"
+                                Text="$500"
+                                     FontSize="16"
+                                GotFocus="NameTxt_GotFocus"
+                                LostFocus="NameTxt_LostFocus" TextChanged="TxtSum_TextChanged"/>
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="Варианты комплектов"
+                                   FontSize="16"
                            FontWeight="Bold"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,10"/>
@@ -98,6 +106,7 @@
 
                         <TextBlock Text="Регистрационный взнос"
                            FontWeight="Bold"
+                                   FontSize="16"
                            HorizontalAlignment="Center"
                            Margin="0,20,0,10"/>
 

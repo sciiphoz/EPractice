@@ -27,6 +27,7 @@ namespace EPractice.Windows
         public ControllerWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new ControllerButtonPage());
             page = 0;
             StartTimer();
         }
@@ -55,7 +56,7 @@ namespace EPractice.Windows
         }
         public void OpenSponsorInfo()
         {
-            MainFrame.Navigate(new RunnerInfoPage());
+            MainFrame.Navigate(new SponsorInfoPage());
             page = 1;
         }
         public void OpenButtonPage()

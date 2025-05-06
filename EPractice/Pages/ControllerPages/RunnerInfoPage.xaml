@@ -25,26 +25,30 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Label Content="Статус:" Grid.Column="0" Grid.Row="0" Margin="0,0,5,0"/>
-            <ComboBox x:Name="StatusComboBox" Grid.Column="1" Grid.Row="0" Margin="0,0,10,5" Width="225" VerticalAlignment="Center"
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Label Content="Статус:" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Margin="45 0 22 0"/>
+                <ComboBox x:Name="StatusComboBox" Grid.Column="1" Grid.Row="0" Margin="0 0 10 5" Width="225" Height="25" VerticalContentAlignment="Center" VerticalAlignment="Center"
                 SelectionChanged="Filters_SelectionChanged">
-                <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
-                <ComboBoxItem Content="Зарегистрированные" Tag="Registered"/>
-                <ComboBoxItem Content="Подтвердили оплату" Tag="Payment Confirmed"/>
-                <ComboBoxItem Content="Набор отправлен" Tag="Race Kit Sent"/>
-                <ComboBoxItem Content="Участвовавший в забеге" Tag="Race Attended"/>
-            </ComboBox>
+                    <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
+                    <ComboBoxItem Content="Зарегистрированные" Tag="Registered"/>
+                    <ComboBoxItem Content="Подтвердили оплату" Tag="Payment Confirmed"/>
+                    <ComboBoxItem Content="Набор отправлен" Tag="Race Kit Sent"/>
+                    <ComboBoxItem Content="Участвовавший в забеге" Tag="Race Attended"/>
+                </ComboBox>
+            </StackPanel>
 
-            <Label Content="Дистанция:" Grid.Column="0" Grid.Row="1" Margin="0,5,5,0"/>
-            <ComboBox x:Name="DistanceComboBox" Grid.Column="1" Grid.Row="1" Margin="0,5,10,0" Width="225" VerticalAlignment="Center"
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom"> 
+                <Label Content="Дистанция:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="45 0 0 0"/>
+                <ComboBox x:Name="DistanceComboBox" Grid.Column="1" Grid.Row="1" Margin="0 5 10 0" Width="225" Height="25" VerticalContentAlignment="Center" VerticalAlignment="Center"
                 SelectionChanged="Filters_SelectionChanged">
-                <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
-                <ComboBoxItem Content="42km полный марафон" Tag="Full"/>
-                <ComboBoxItem Content="21km полумарафон" Tag="Half"/>
-                <ComboBoxItem Content="5km мини-марафон" Tag="Mini"/>
-            </ComboBox>
+                    <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
+                    <ComboBoxItem Content="42km полный марафон" Tag="Full"/>
+                    <ComboBoxItem Content="21km полумарафон" Tag="Half"/>
+                    <ComboBoxItem Content="5km мини-марафон" Tag="Mini"/>
+                </ComboBox>
+            </StackPanel>
 
-            <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" HorizontalAlignment="Right">
+            <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 45 0">
                 <Button Content="Детальная информация (CSV)"
                 Click="ExportDetailsButton_Click" Width="200" Height="30" Margin="0,0,0,5"/>
                 <Button Content="E-mail список"
@@ -84,8 +88,7 @@
                     <DataGridTemplateColumn Header="Действия" Width="Auto">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="Редактировать" 
-                                Background="#FFFDC100" Tag="{Binding RunnerId}"/>
+                                <Button Content="Редактировать" Tag="{Binding RunnerId}"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

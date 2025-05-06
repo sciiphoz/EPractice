@@ -10,23 +10,23 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
-            <Label HorizontalAlignment="Center" Margin="0 0 0 25" FontSize="24" FontFamily="Sans" FontWeight="SemiBold">Подробная информация</Label>
+            <Label HorizontalAlignment="Center" Margin="0 0 0 75" FontSize="24" FontFamily="Sans" FontWeight="SemiBold">Подробная информация</Label>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 25 0">
-                    <Button x:Name="MarathonBtn" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Click="MarathonBtn_Click">Marathon Skills 2016</Button>
-                    <Button x:Name="PastResultsBtn" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="PastResultsBtn_Click">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 40 0">
+                    <Button x:Name="MarathonBtn" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Click="MarathonBtn_Click">Marathon Skills 2016</Button>
+                    <Button x:Name="PastResultsBtn" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Margin="0 30 0 0" Click="PastResultsBtn_Click">
                         <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Предыдущие результаты</TextBlock>
                     </Button>
-                    <Button x:Name="BMIButton" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="BMIButton_Click">BMI калькулятор</Button>
+                    <Button x:Name="BMIButton" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Margin="0 30 0 0" Click="BMIButton_Click">BMI калькулятор</Button>
                 </StackPanel>
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button x:Name="ComparisonBtn" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Click="ComparisonBtn_Click">
+                    <Button x:Name="ComparisonBtn" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Click="ComparisonBtn_Click">
                         <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Насколько долгий марафон</TextBlock>
                     </Button>
-                    <Button x:Name="OrgsListBtn" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="OrgsListBtn_Click">
+                    <Button x:Name="OrgsListBtn" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Margin="0 30 0 0" Click="OrgsListBtn_Click">
                         <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center">Список благотворительных организаций</TextBlock>
                     </Button>
-                    <Button x:Name="BMRButton" Width="250" Height="90" FontSize="20" Padding="5" FontStyle="Italic" FontWeight="SemiBold" FontFamily="Arial" Margin="0 15 0 0" Click="BMRButton_Click">BMR калькулятор</Button>
+                    <Button x:Name="BMRButton" Width="350" Height="75" FontSize="24" Padding="5" FontStyle="Italic" FontFamily="Arial" Margin="0 30 0 0" Click="BMRButton_Click">BMR калькулятор</Button>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

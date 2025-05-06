@@ -1,4 +1,5 @@
 ﻿using EPractice.DBConnection;
+using EPractice.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace EPractice.Pages.AdminPages
     /// </summary>
     public partial class EquipmentPage : Page
     {
+        MarathonEntities _context = new MarathonEntities();
         public EquipmentPage()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace EPractice.Pages.AdminPages
         {
             try
             {
-                using (var context = Connection.marathonEntities)
+                using (var context = _context)
                 {
                     int totalRunners = context.Registration.Count();
                     TotalRunnersText.Text = $"Всего зарегистрировано бегунов на марафон: {totalRunners}";
@@ -45,7 +47,7 @@ namespace EPractice.Pages.AdminPages
                             TypeB = context.Registration.Count(r => r.RaceKitOptionId == "B"),
                             TypeC = context.Registration.Count(r => r.RaceKitOptionId == "C"),
                             Total = totalRunners,
-                            Remaining = 0 // Not applicable for this row
+                            Remaining = 0 
                         }
                     };
                     KitSelectionGrid.ItemsSource = kitSelection;
@@ -124,122 +126,14 @@ namespace EPractice.Pages.AdminPages
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при генерации отчета: {ex.Message}", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при генерации отчета: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-
-        private FlowDocument CreateInventoryReportDocument(MarathonEntities context)
-        {
-            FlowDocument document = new FlowDocument();
-
-            Paragraph title = new Paragraph(new Run("ОТЧЕТ ПО ИНВЕНТАРЮ MARATHON SKILLS 2025"))
-            {
-                FontSize = 18,
-                FontWeight = FontWeights.Bold,
-                TextAlignment = TextAlignment.Center,
-                Margin = new Thickness(0, 0, 0, 20)
-            };
-            document.Blocks.Add(title);
-
-            Paragraph date = new Paragraph(new Run($"Дата формирования: {DateTime.Now:dd.MM.yyyy HH:mm}"))
-            {
-                FontSize = 12,
-                TextAlignment = TextAlignment.Left,
-                Margin = new Thickness(0, 0, 0, 10)
-            };
-            document.Blocks.Add(date);
-
-            Table table = new Table();
-            document.Blocks.Add(table);
-
-            table.CellSpacing = 0;
-            table.BorderBrush = Brushes.Black;
-            table.BorderThickness = new Thickness(1, 1, 0, 0);
-
-            for (int i = 0; i < 5; i++)
-            {
-                table.Columns.Add(new TableColumn());
-            }
-
-            TableRowGroup headerGroup = new TableRowGroup();
-            table.RowGroups.Add(headerGroup);
-            TableRow headerRow = new TableRow { Background = Brushes.LightGray };
-            headerGroup.Rows.Add(headerRow);
-
-            headerRow.Cells.Add(CreateHeaderCell("Наименование"));
-            headerRow.Cells.Add(CreateHeaderCell("Требуется"));
-            headerRow.Cells.Add(CreateHeaderCell("На складе"));
-            headerRow.Cells.Add(CreateHeaderCell("Минимум"));
-            headerRow.Cells.Add(CreateHeaderCell("К заказу"));
-
-            var items = context.InventoryItem.ToList();
-            TableRowGroup dataGroup = new TableRowGroup();
-            table.RowGroups.Add(dataGroup);
-
-            foreach (var item in items)
-            {
-                var kitItems = context.KitItem
-                    .Where(ki => ki.InventoryItemId == item.InventoryItemId)
-                    .ToList();
-
-                int totalNeeded = 0;
-                var registrations = context.Registration.ToList();
-
-                foreach (var ki in kitItems)
-                {
-                    totalNeeded += ki.Quantity * registrations.Count(r => r.RaceKitOptionId == ki.RaceKitOptionId);
-                }
-
-                int toOrder = Math.Max(0, totalNeeded - item.CurrentStock);
-
-                TableRow row = new TableRow();
-                dataGroup.Rows.Add(row);
-
-                row.Cells.Add(CreateDataCell(item.ItemName));
-                row.Cells.Add(CreateDataCell(totalNeeded.ToString()));
-                row.Cells.Add(CreateDataCell(item.CurrentStock.ToString()));
-                row.Cells.Add(CreateDataCell(item.MinimumStock.ToString()));
-
-                TableCell orderCell = CreateDataCell(toOrder.ToString());
-                if (toOrder > 0)
-                {
-                    orderCell.Background = Brushes.LightPink;
-                    orderCell.FontWeight = FontWeights.Bold;
-                }
-                row.Cells.Add(orderCell);
-            }
-
-            return document;
-        }
-
-        private TableCell CreateHeaderCell(string text)
-        {
-            return new TableCell(new Paragraph(new Run(text))
-            {
-                BorderBrush = Brushes.Black,
-                BorderThickness = new Thickness(0, 0, 1, 1),
-                Padding = new Thickness(6),
-                TextAlignment = TextAlignment.Center,
-                FontWeight = FontWeights.Bold
-            });
-        }
-
-        private TableCell CreateDataCell(string text)
-        {
-            return new TableCell(new Paragraph(new Run(text))
-            {
-                BorderBrush = Brushes.Black,
-                BorderThickness = new Thickness(0, 0, 1, 1),
-                Padding = new Thickness(6),
-                TextAlignment = TextAlignment.Left
-            });
         }
 
         private void ArrivalButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new EquipmentArrivalPage());
-            MessageBox.Show("Функция прихода инвентаря будет реализована позже", "Приход инвентаря", MessageBoxButton.OK, MessageBoxImage.Information);
+            AdminWindow adminWindow = Window.GetWindow(this) as AdminWindow;
+            adminWindow.OpenEquipmentArrival();
         }
     }
 

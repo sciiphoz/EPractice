@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EPractice.Windows;
 
 namespace EPractice.Pages.InfoPages
 {
@@ -27,12 +28,8 @@ namespace EPractice.Pages.InfoPages
 
         private void MapButton_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-
+            InfoWindow infoWindow = Window.GetWindow(this) as InfoWindow;
+            infoWindow.OpenInteractiveMap();
         }
     }
 }

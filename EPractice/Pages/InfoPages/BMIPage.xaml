@@ -17,7 +17,7 @@
 
         <StackPanel Margin="40" HorizontalAlignment="Center" Width="400">
 
-            <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0,0,0,30" FontSize="16">
+            <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0,0,0,30" FontSize="18">
                 <Run Text="BMI обозначает индекс массы тела. Он используется, чтобы дать вам представление о том, является ли ваш вес избыточным или идеальным для вашего роста."/>
                 <LineBreak/>
                 <Run Text="Это полезно знать, потому что если ваш вес увеличивается или уменьшается за пределами идеального диапазона, у вас повышается риск заболеть."/>

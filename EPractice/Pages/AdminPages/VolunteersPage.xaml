@@ -59,7 +59,7 @@
                 FontWeight="Bold"
                 Text="Всего волонтеров: 0" />
 
-            <ListView x:Name="VolunteersListView" BorderThickness="0" Height="300">
+            <ListView x:Name="VolunteersListView" BorderThickness="0">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Фамилия" Width="150" DisplayMemberBinding="{Binding LastName}" />

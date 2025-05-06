@@ -39,6 +39,7 @@ namespace EPractice
         {
             RunnerWindow runnerWindow = new RunnerWindow();
             runnerWindow.Show();
+            runnerWindow.OpenRegistrationPage();
             Close();
         }
         private void InfoButton_Click(object sender, RoutedEventArgs e)

@@ -10,12 +10,10 @@
 
     <Grid>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="40,20,40,20" HorizontalAlignment="Center" Width="600">
-                <!-- Title -->
+            <StackPanel Margin="20" HorizontalAlignment="Center" Width="600">
                 <Label Content="Поступление инвентаря" HorizontalAlignment="Center" 
                FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
 
-                <!-- Inventory Items Table -->
                 <DataGrid x:Name="InventoryItemsGrid" AutoGenerateColumns="False" 
                   HeadersVisibility="Column" CanUserAddRows="False" 
                   CanUserDeleteRows="False" IsReadOnly="False"
@@ -35,10 +33,8 @@
                     </DataGrid.Columns>
                 </DataGrid>
 
-                <!-- Save Button -->
                 <Button Content="Сохранить" Width="120" Height="35" HorizontalAlignment="Center"
-                Background="#00903E" Foreground="White" FontWeight="Bold"
-                Click="SaveButton_Click"/>
+                FontWeight="Bold" Click="SaveButton_Click"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

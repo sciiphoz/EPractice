@@ -21,23 +21,11 @@ namespace EPractice.Pages.AdminPages
     /// </summary>
     public partial class OrgsManagmentPage : Page
     {
+        MarathonEntities _context = new MarathonEntities();
         public OrgsManagmentPage()
         {
             InitializeComponent();
-            LoadCharities();
-        }
-
-        private void LoadCharities()
-        {
-            try
-            {
-                LvCharity.ItemsSource = Connection.marathonEntities.Charity.ToList();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при загрузке данных: {ex.Message}", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            LvCharity.ItemsSource = _context.Charity.ToList();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
@@ -59,7 +47,7 @@ namespace EPractice.Pages.AdminPages
             if (button != null && button.Tag != null)
             {
                 int charityId = (int)button.Tag;
-                var charityToEdit = Connection.marathonEntities.Charity.FirstOrDefault(c => c.CharityId == charityId);
+                var charityToEdit = _context.Charity.FirstOrDefault(c => c.CharityId == charityId);
                 if (charityToEdit != null)
                 {
                     NavigationService.Navigate(new OrgEditPage(charityToEdit));

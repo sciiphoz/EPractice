@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:EPractice"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Arial"></Setter>
+        </Style>
+
         <Style TargetType="Button">
             <Style.Resources>
                 <Style TargetType="Border">
@@ -14,10 +28,6 @@
 
             <Setter Property="Background" Value="#3A32C7"></Setter>
             <Setter Property="Foreground" Value="White"></Setter>
-        </Style>
-
-        <Style TargetType="TextBox">
-            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
         </Style>
 
         <Style TargetType="PasswordBox">

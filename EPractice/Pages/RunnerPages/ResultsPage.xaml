@@ -10,21 +10,21 @@
 
     <Grid>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="40,20,40,20">
+            <StackPanel Margin="20">
                 <Label Content="Мои результаты" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold"/>
 
-                <TextBlock TextWrapping="Wrap" Margin="0,10,0,20" TextAlignment="Center" FontFamily="Arial" FontSize="20">
-            Это - список всех ваших прошлых результатов гонки для Marathon Skills.
-            Общее место сравнивает всех бегунов.
-            Место по категории сравнивает бегунов одного пола и возрастной категории.
+                <TextBlock TextWrapping="Wrap" Margin="0,10,0,20" TextAlignment="Center" FontFamily="Arial" FontSize="22">
+                    Это - список всех ваших прошлых результатов гонки для Marathon Skills.
+                    Общее место сравнивает всех бегунов.
+                    Место по категории сравнивает бегунов одного пола и возрастной категории.
                 </TextBlock>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
-                    <TextBlock Text="Пол:" FontWeight="Bold" Margin="0,0,5,0"/>
-                    <TextBlock x:Name="GenderText"/>
-                    <TextBlock Text=", " Margin="5,0,5,0"/>
-                    <TextBlock Text="Возрастная категория:" FontWeight="Bold" Margin="0,0,5,0"/>
-                    <TextBlock x:Name="AgeCategoryText"/>
+                    <TextBlock FontSize="16" Text="Пол:" FontWeight="Bold" Margin="0,0,5,0"/>
+                    <TextBlock FontSize="16" x:Name="GenderText"/>
+                    <TextBlock FontSize="16" Text=", " Margin="5,0,5,0"/>
+                    <TextBlock FontSize="16" Text="Возрастная категория:" FontWeight="Bold" Margin="0,0,5,0"/>
+                    <TextBlock FontSize="16" x:Name="AgeCategoryText"/>
                 </StackPanel>
 
                 <StackPanel>

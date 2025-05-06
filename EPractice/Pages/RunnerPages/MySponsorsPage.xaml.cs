@@ -57,7 +57,7 @@ namespace EPractice.Pages.RunnerPages
                         {
                             string logoPath = System.IO.Path.Combine(
                                 AppDomain.CurrentDomain.BaseDirectory,
-                                "Materials",
+                                "CharityImages",
                                 charity.CharityLogo);
 
                             if (System.IO.File.Exists(logoPath))
@@ -67,7 +67,7 @@ namespace EPractice.Pages.RunnerPages
                             }
                             else
                             {
-                                var uri = new Uri($"pack://application:,,,/uhebnia_praktika_mubar_321;component/Materials/{charity.CharityLogo}");
+                                var uri = new Uri($"pack://application:,,,/Images/CharityImages/{charity.CharityLogo}");
                                 CharityLogoImage.Source = new BitmapImage(uri);
                             }
                         }
@@ -99,7 +99,7 @@ namespace EPractice.Pages.RunnerPages
                             {
                                 string logoPath = System.IO.Path.Combine(
                                     AppDomain.CurrentDomain.BaseDirectory,
-                                    "Materials",
+                                    "CharityImages",
                                     charity.CharityLogo);
 
                                 if (System.IO.File.Exists(logoPath))
@@ -108,7 +108,7 @@ namespace EPractice.Pages.RunnerPages
                                 }
                                 else
                                 {
-                                    var uri = new Uri($"pack://application:,,,/uhebnia_praktika_mubar_321;component/Materials/{charity.CharityLogo}");
+                                    var uri = new Uri($"pack://application:,,,/Images/CharityImages/{charity.CharityLogo}");
                                     sponsor.LogoImage = new BitmapImage(uri);
                                 }
                             }

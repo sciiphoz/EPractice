@@ -21,7 +21,7 @@ namespace EPractice.Pages.AdminPages
     /// </summary>
     public partial class EquipmentArrivalPage : Page
     {
-        private MarathonEntities _context;
+        MarathonEntities _context = new MarathonEntities();
         public EquipmentArrivalPage()
         {
             InitializeComponent();
@@ -31,23 +31,23 @@ namespace EPractice.Pages.AdminPages
 
         private void LoadInventoryData()
         {
-            //try
-            //{
-            //    var inventoryItems = _context.InventoryItem.ToList()
-            //        .Select(i => new InventoryArrivalViewModel
-            //        {
-            //            InventoryItemId = i.InventoryItemId,
-            //            ItemName = i.ItemName,
-            //            CurrentStock = i.CurrentStock,
-            //            ArrivalQuantity = 0
-            //        }).ToList();
+            try
+            {
+                var inventoryItems = _context.InventoryItem.ToList()
+                    .Select(i => new InventoryArrivalViewModel
+                    {
+                        InventoryItemId = i.InventoryItemId,
+                        ItemName = i.ItemName,
+                        CurrentStock = i.CurrentStock,
+                        ArrivalQuantity = 0
+                    }).ToList();
 
-            //    InventoryItemsGrid.ItemsSource = inventoryItems;
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Ошибка при загрузке данных инвентаря: {ex.Message}");
-            //}
+                InventoryItemsGrid.ItemsSource = inventoryItems;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных инвентаря: {ex.Message}");
+            }
         }
 
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -60,59 +60,46 @@ namespace EPractice.Pages.AdminPages
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
-            //    foreach (InventoryArrivalViewModel item in InventoryItemsGrid.Items)
-            //    {
-            //        if (item.ArrivalQuantity == 0)
-            //            continue;
+            try
+            {
+                foreach (InventoryArrivalViewModel item in InventoryItemsGrid.Items)
+                {
+                    if (item.ArrivalQuantity == 0)
+                        continue;
 
-            //        var inventoryItem = _context.InventoryItem.Find(item.InventoryItemId);
-            //        if (inventoryItem != null)
-            //        {
-            //            inventoryItem.CurrentStock += item.ArrivalQuantity;
+                    var inventoryItem = _context.InventoryItem.Find(item.InventoryItemId);
+                    if (inventoryItem != null)
+                    {
+                        inventoryItem.CurrentStock += item.ArrivalQuantity;
 
-            //            if (inventoryItem.CurrentStock < 0)
-            //            {
-            //                var result = MessageBox.Show(
-            //                    $"Отрицательный остаток для {item.ItemName}. Продолжить?",
-            //                    "Подтверждение",
-            //                    MessageBoxButton.YesNo,
-            //                    MessageBoxImage.Warning);
+                        if (inventoryItem.CurrentStock < 0)
+                        {
+                            var result = MessageBox.Show(
+                                $"Отрицательный остаток для {item.ItemName}. Продолжить?",
+                                "Подтверждение",
+                                MessageBoxButton.YesNo,
+                                MessageBoxImage.Warning);
 
-            //                if (result != MessageBoxResult.Yes)
-            //                {
-            //                    return;
-            //                }
-            //            }
-            //        }
-            //    }
+                            if (result != MessageBoxResult.Yes)
+                            {
+                                return;
+                            }
+                        }
+                    }
+                }
 
-            //    _context.SaveChanges();
-            //    MessageBox.Show("Изменения сохранены успешно", "Успех",
-            //        MessageBoxButton.OK, MessageBoxImage.Information);
+                _context.SaveChanges();
+                MessageBox.Show("Изменения сохранены успешно", "Успех",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
 
-            //    // Refresh data after save
-            //    LoadInventoryData();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Ошибка при сохранении изменений: {ex.Message}", "Ошибка",
-            //        MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
+                LoadInventoryData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сохранении изменений: {ex.Message}", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-            _context.Dispose(); // Clean up the context
-            NavigationService.GoBack();
-        }
-
-        /*protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            base.OnNavigatedFrom(e);
-            _context.Dispose(); // Clean up the context when navigating away
-        }*/
     }
 
     public class InventoryArrivalViewModel

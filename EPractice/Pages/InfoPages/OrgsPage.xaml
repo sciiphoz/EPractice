@@ -45,11 +45,11 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="{Binding CharityLogo, Converter={StaticResource ImagePathConverter}}" 
-                                   Height="120" 
-                                   Width="120"
-                                   Stretch="Uniform"
-                                   Margin="10"
-                                   Grid.Column="0"/>
+                                       Height="120" 
+                                       Width="120"
+                                       Stretch="Uniform"
+                                       Margin="10"
+                                       Grid.Column="0"/>
 
                                     <StackPanel Grid.Column="1" Margin="10">
                                         <TextBlock Text="{Binding CharityName}"

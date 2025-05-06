@@ -40,7 +40,7 @@ namespace EPractice.Windows
                 {
                     string logoPath = System.IO.Path.Combine(
                         AppDomain.CurrentDomain.BaseDirectory,
-                        "Materials",
+                        "CharityImages",
                         _charity.CharityLogo);
 
                     if (System.IO.File.Exists(logoPath))
@@ -50,7 +50,7 @@ namespace EPractice.Windows
                     }
                     else
                     {
-                        var uri = new Uri($"pack://application:,,,/uhebnia_praktika_mubar_321;component/materials/{_charity.CharityLogo}");
+                        var uri = new Uri($"pack://application:,,,/Images/CharityImages/{_charity.CharityLogo}");
                         var logoImage = new BitmapImage(uri);
                         LogoEllipse.Fill = new ImageBrush(logoImage);
                     }
@@ -58,8 +58,7 @@ namespace EPractice.Windows
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Не удалось загрузить логотип: {ex.Message}",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"Не удалось загрузить логотип: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 

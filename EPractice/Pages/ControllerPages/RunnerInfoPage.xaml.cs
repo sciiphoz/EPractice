@@ -27,54 +27,22 @@ namespace EPractice.Pages.ControllerPages
             InitializeComponent();
             LoadRunnersData();
         }
-        private void InitializeComboBoxes()
-        {
-            try
-            {
-                // Инициализация комбобокса статусов
-                StatusComboBox.Items.Add(new ComboBoxItem { Content = "Все", Tag = "All", IsSelected = true });
-                StatusComboBox.Items.Add(new ComboBoxItem { Content = "Registered", Tag = "Registered" });
-                StatusComboBox.Items.Add(new ComboBoxItem { Content = "Payment Confirmed", Tag = "Payment Confirmed" });
-                StatusComboBox.Items.Add(new ComboBoxItem { Content = "Race Kit Sent", Tag = "Race Kit Sent" });
-                StatusComboBox.Items.Add(new ComboBoxItem { Content = "Race Attended", Tag = "Race Attended" });
 
-                // Инициализация комбобокса дистанций
-                DistanceComboBox.Items.Add(new ComboBoxItem { Content = "Все", Tag = "All", IsSelected = true });
-                DistanceComboBox.Items.Add(new ComboBoxItem { Content = "42km полный марафон", Tag = "Full" });
-                DistanceComboBox.Items.Add(new ComboBoxItem { Content = "21km полумарафон", Tag = "Half" });
-                DistanceComboBox.Items.Add(new ComboBoxItem { Content = "5km мини-марафон", Tag = "Mini" });
-
-                // Инициализация комбобокса сортировки
-                SortComboBox.Items.Add(new ComboBoxItem { Content = "Имя", Tag = "FirstName", IsSelected = true });
-                SortComboBox.Items.Add(new ComboBoxItem { Content = "Фамилия", Tag = "LastName" });
-                SortComboBox.Items.Add(new ComboBoxItem { Content = "Email", Tag = "Email" });
-                SortComboBox.Items.Add(new ComboBoxItem { Content = "Статус", Tag = "Status" });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при инициализации фильтров: {ex.Message}");
-            }
-        }
         private void LoadRunnersData()
         {
             try
             {
-                // Проверяем инициализацию комбобоксов
                 if (StatusComboBox == null || DistanceComboBox == null || SortComboBox == null)
                 {
-                    MessageBox.Show("Ошибка инициализации фильтров");
                     return;
                 }
 
-                // Получаем выбранные фильтры с проверкой на null
                 string statusFilter = (StatusComboBox.SelectedItem as ComboBoxItem)?.Tag?.ToString() ?? "All";
                 string distanceFilter = (DistanceComboBox.SelectedItem as ComboBoxItem)?.Tag?.ToString() ?? "All";
                 string sortField = (SortComboBox.SelectedItem as ComboBoxItem)?.Tag?.ToString() ?? "FirstName";
 
-                // Получаем список бегунов с учетом фильтров
                 var runners = GetFilteredRunners(statusFilter, distanceFilter, sortField);
 
-                // Обновляем общее количество
                 TotalRunnersText.Text = $"Всего бегунов: {runners.Count}";
 
                 if (runners.Any())
@@ -99,14 +67,12 @@ namespace EPractice.Pages.ControllerPages
         {
             var query = Connection.marathonEntities.Runner.AsQueryable();
 
-            // Фильтр по статусу
             if (statusFilter != "All")
             {
                 query = query.Where(r => r.Registration.Any(reg =>
                     reg.RegistrationStatus.RegistrationStatus1 == statusFilter));
             }
 
-            // Фильтр по дистанции
             if (distanceFilter != "All")
             {
                 query = query.Where(r => r.Registration.Any(reg =>
@@ -114,7 +80,6 @@ namespace EPractice.Pages.ControllerPages
                         re.Event.EventType.EventTypeName.Contains(distanceFilter))));
             }
 
-            // Сортировка
             switch (sortField)
             {
                 case "FirstName":
@@ -134,7 +99,6 @@ namespace EPractice.Pages.ControllerPages
                     break;
             }
 
-            // Преобразуем в список RunnerInfo
             return query.Select(r => new RunnerInfo
             {
                 RunnerId = r.RunnerId,
@@ -149,7 +113,6 @@ namespace EPractice.Pages.ControllerPages
         {
             try
             {
-                // Получаем текущий список ID бегунов из DataGrid
                 var runnerIds = (RunnersGrid.ItemsSource as IEnumerable<RunnerInfo>)?.Select(r => r.RunnerId).ToList();
                 if (runnerIds == null || !runnerIds.Any())
                 {
@@ -157,7 +120,6 @@ namespace EPractice.Pages.ControllerPages
                     return;
                 }
 
-                // Запрашиваем у пользователя место сохранения файла
                 var saveFileDialog = new Microsoft.Win32.SaveFileDialog
                 {
                     Filter = "CSV файлы (*.csv)|*.csv",
@@ -168,7 +130,6 @@ namespace EPractice.Pages.ControllerPages
                 if (saveFileDialog.ShowDialog() != true)
                     return;
 
-                // Получаем данные о бегунах напрямую из базы данных
                 var runnersData = Connection.marathonEntities.Runner
                     .Where(r => runnerIds.Contains(r.RunnerId))
                     .Select(r => new
@@ -188,13 +149,10 @@ namespace EPractice.Pages.ControllerPages
                     })
                     .ToList();
 
-                // Создаем CSV содержимое
                 var csvContent = new StringBuilder();
 
-                // Заголовки столбцов
                 csvContent.AppendLine("Имя,Фамилия,Эл. адрес,Пол,Страна,Дата рождения,Возраст,Состояние регистрации,Выбранный комплект,Тип марафонов");
 
-                // Данные по каждому бегуну
                 foreach (var runner in runnersData)
                 {
                     var marathonTypes = runner.MarathonTypes != null
@@ -219,7 +177,6 @@ namespace EPractice.Pages.ControllerPages
                         $"\"{marathonTypes}\"");
                 }
 
-                // Сохраняем файл
                 File.WriteAllText(saveFileDialog.FileName, csvContent.ToString(), Encoding.UTF8);
 
                 MessageBox.Show($"Данные успешно экспортированы в файл:\n{saveFileDialog.FileName}",
@@ -236,7 +193,6 @@ namespace EPractice.Pages.ControllerPages
         {
             try
             {
-                // Получаем текущий список ID бегунов из DataGrid
                 var runnerIds = (RunnersGrid.ItemsSource as IEnumerable<RunnerInfo>)?.Select(r => r.RunnerId).ToList();
                 if (runnerIds == null || !runnerIds.Any())
                 {
@@ -244,7 +200,6 @@ namespace EPractice.Pages.ControllerPages
                     return;
                 }
 
-                // Получаем данные о бегунах (имя, фамилия, email) напрямую из базы данных
                 var runnersEmails = Connection.marathonEntities.Runner
                     .Where(r => runnerIds.Contains(r.RunnerId))
                     .Select(r => new
@@ -255,20 +210,17 @@ namespace EPractice.Pages.ControllerPages
                     })
                     .ToList();
 
-                // Формируем список email в требуемом формате
                 var emailsList = new StringBuilder();
                 foreach (var runner in runnersEmails)
                 {
                     emailsList.Append($"\"{runner.LastName} {runner.FirstName}\" <{runner.Email}>; ");
                 }
 
-                // Удаляем последнюю точку с запятой и пробел
                 if (emailsList.Length > 0)
                 {
                     emailsList.Length -= 2;
                 }
 
-                // Создаем всплывающее окно для отображения списка email
                 var emailWindow = new Window
                 {
                     Title = "Список email бегунов",
@@ -296,15 +248,13 @@ namespace EPractice.Pages.ControllerPages
                     Content = "Копировать в буфер",
                     Margin = new Thickness(10),
                     HorizontalAlignment = HorizontalAlignment.Right,
-                    Style = (Style)FindResource("RoundedButtonStyle"),
                     Background = (Brush)new BrushConverter().ConvertFrom("#FFFDC100")
                 };
 
                 copyButton.Click += (s, args) =>
                 {
                     Clipboard.SetText(textBox.Text);
-                    MessageBox.Show("Список email скопирован в буфер обмена", "Копирование",
-                        MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Список email скопирован в буфер обмена", "Копирование", MessageBoxButton.OK, MessageBoxImage.Information);
                 };
 
                 var stackPanel = new StackPanel();
@@ -316,8 +266,7 @@ namespace EPractice.Pages.ControllerPages
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при экспорте email: {ex.Message}",
-                    "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при экспорте email: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

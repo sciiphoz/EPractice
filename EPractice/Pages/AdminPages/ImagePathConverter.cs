@@ -4,11 +4,12 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
 namespace EPractice.Pages.AdminPages
 {
-    internal class ImagePathConverter
+    internal class ImagePathConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -16,7 +17,7 @@ namespace EPractice.Pages.AdminPages
 
             if (!string.IsNullOrEmpty(fileName))
             {
-                string fullPath = $"/Materials/{fileName}";
+                string fullPath = $"/Images/CharityImages/{fileName}";
                 return new BitmapImage(new Uri(fullPath, UriKind.Relative));
             }
             return null;

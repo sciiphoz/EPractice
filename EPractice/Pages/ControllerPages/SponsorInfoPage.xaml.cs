@@ -84,9 +84,9 @@ namespace EPractice.Pages.ControllerPages
         private string GetLogoPath(string logoFileName)
         {
             if (string.IsNullOrEmpty(logoFileName))
-                return "/Resources/default-charity.png";
+                return "/Images/CharityImages/default-charity.png";
 
-            return $"/Resources/Charities/{logoFileName}";
+            return $"/Images/CharityImages/{logoFileName}";
         }
         private void SortComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

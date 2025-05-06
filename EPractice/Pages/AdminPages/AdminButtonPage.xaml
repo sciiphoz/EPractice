@@ -10,10 +10,10 @@
 
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold" FontFamily="Sans" Margin="0 0 0 45">Меню координатора</Label>
+            <Label HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold" FontFamily="Sans" Margin="0 0 0 75">Меню администратора</Label>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 30">
-                <Button x:Name="VolunteerBtn" Width="350" Height="75" FontSize="24" Margin="0 0 15 0" FontFamily="Arial" FontStyle="Italic" Click="VolunteerBtn_Click">Волонтеры</Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 45">
+                <Button x:Name="VolunteerBtn" Width="350" Height="75" FontSize="24" Margin="0 0 30 0" FontFamily="Arial" FontStyle="Italic" Click="VolunteerBtn_Click">Волонтеры</Button>
                 <Button x:Name="EquipBtn" Width="350" Height="75" FontSize="24" FontFamily="Arial" FontStyle="Italic" Click="EquipBtn_Click">Инвентарь</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">

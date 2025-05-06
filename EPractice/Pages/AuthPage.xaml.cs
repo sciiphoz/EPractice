@@ -59,14 +59,14 @@ namespace EPractice.Pages
                 }
                 else if (loginObj.RoleId == "A")
                 {
-                    RunnerWindow runnerWindow = new RunnerWindow();
-                    runnerWindow.Show();
+                    AdminWindow adminWindow = new AdminWindow();
+                    adminWindow.Show();
                     Window.GetWindow(this).Close();
                 }
                 else if (loginObj.RoleId == "C")
                 {
-                    RunnerWindow runnerWindow = new RunnerWindow();
-                    runnerWindow.Show();
+                    ControllerWindow controllerWindow = new ControllerWindow();
+                    controllerWindow.Show();
                     Window.GetWindow(this).Close();
                 }
             }

@@ -26,7 +26,7 @@ namespace EPractice.Pages.RunnerPages
         }
         private void BtnOk_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new MenuBeguna());
+            NavigationService.Navigate(new RunnerButtonPage());
         }
     }
 }

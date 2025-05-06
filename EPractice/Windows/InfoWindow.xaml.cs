@@ -1,4 +1,5 @@
 ﻿using EPractice.Classes;
+using EPractice.Pages;
 using EPractice.Pages.ControllerPages;
 using EPractice.Pages.InfoPages;
 using System;
@@ -48,6 +49,12 @@ namespace EPractice.Windows
                 default:
                     break;
             }
+        }
+
+        public void OpenInteractiveMap()
+        {
+            MainFrame.Navigate(new InteractiveMapPage());
+            page = 1;
         }
         public void OpenButtonsPage()
         {

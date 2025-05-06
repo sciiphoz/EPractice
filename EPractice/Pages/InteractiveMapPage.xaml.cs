@@ -31,7 +31,7 @@ namespace EPractice.Pages
         }
         private void btnCheck1_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 1";
+            txtCheckpoint.Text = "Точка №1";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = null;
@@ -42,7 +42,7 @@ namespace EPractice.Pages
 
         private void btnCheck2_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 2";
+            txtCheckpoint.Text = "Точка №2";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = new BitmapImage(wc);
@@ -52,7 +52,7 @@ namespace EPractice.Pages
 
         private void btnCheck3_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 3";
+            txtCheckpoint.Text = "Точка №3";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = new BitmapImage(wc);
@@ -62,7 +62,7 @@ namespace EPractice.Pages
 
         private void btnCheck4_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 4";
+            txtCheckpoint.Text = "Точка №4";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = new BitmapImage(wc);
@@ -72,7 +72,7 @@ namespace EPractice.Pages
 
         private void btnCheck5_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 5";
+            txtCheckpoint.Text = "Точка №5";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = new BitmapImage(wc);
@@ -82,7 +82,7 @@ namespace EPractice.Pages
 
         private void btnCheck6_Click(object sender, RoutedEventArgs e)
         {
-            txtCheckpoint.Text = "Checkpoint 6";
+            txtCheckpoint.Text = "Точка №6";
             imgDrink.Source = new BitmapImage(drink);
             imgEnergy.Source = new BitmapImage(energy);
             imgWC.Source = new BitmapImage(wc);

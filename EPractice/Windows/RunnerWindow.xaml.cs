@@ -28,7 +28,7 @@ namespace EPractice.Windows
         public RunnerWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new RegistrationPage());
+            MainFrame.Navigate(new RunnerButtonPage());
             page = 0;
             StartTimer();
         }
@@ -43,7 +43,7 @@ namespace EPractice.Windows
                     Close();
                     break;
                 case 1:
-                    MainFrame.Navigate(new RunnerInfoPage());
+                    MainFrame.Navigate(new RunnerButtonPage());
                     page = 0;
                     break;
                 default:

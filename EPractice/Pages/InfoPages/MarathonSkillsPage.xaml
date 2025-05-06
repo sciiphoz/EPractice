@@ -52,7 +52,7 @@
 
         <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Margin="10">
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" FontSize="16" Margin="0,0,0,20">
+                <TextBlock TextWrapping="Wrap" FontSize="18" FontFamily="Arial" Margin="0,0,0,20">
                     <Run Text="Marathon Skills - фестиваль бега, проводимый каждый год в разных частях мира. Может быть три зачета: Полный Марафон, Полумарафон и забег для новичков - таким образом фестиваль подходит всем."/>
                     <LineBreak/><LineBreak/>
                     <Run Text="В прошлых годах марафон был проведен в Осаке, Япония (2014); Лейпциг, Германия (2013); Ханой, Вьетнам (2012) и Йорк, Англия (2011)."/>
@@ -64,16 +64,12 @@
                     <Run Text="Атмосфера праздника обещает развлечения для всех зрителей."/>
                 </TextBlock>
 
-                <TextBlock Text="События:" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                <TextBlock Text="События:" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
                 <StackPanel Margin="20,0,0,20">
-                    <TextBlock Text="- Программа 'Самба' Полный Марафон начнется в Руа-Ду-Американо в 6 утра."/>
-                    <TextBlock Text="- Программа 'Джонго' Полумарафон начнет в 7 утра. Бегуны будут стартовать от недалеко от пересечения улицы Руа Ciniciata и Авенида."/>
-                    <TextBlock Text="- Программа 'Капоэйра' в 5 км забег для новичков начнется в 15 часов. Наши новички побегут от Мемориала Унинове."/>
+                    <TextBlock FontSize="16" Text="- Программа 'Самба' Полный Марафон начнется в Руа-Ду-Американо в 6 утра."/>
+                    <TextBlock FontSize="16" Text="- Программа 'Джонго' Полумарафон начнет в 7 утра. Бегуны будут стартовать от недалеко от пересечения улицы Руа Ciniciata и Авенида."/>
+                    <TextBlock FontSize="16" Text="- Программа 'Капоэйра' в 5 км забег для новичков начнется в 15 часов. Наши новички побегут от Мемориала Унинове."/>
                 </StackPanel>
-
-                <TextBlock Text="Дополнительные сведения:" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
-                <TextBlock Text="Здесь может быть дополнительная информация о марафоне, спонсорах, волонтерах и других деталях события." 
-                           TextWrapping="Wrap" FontSize="16" Margin="0,0,0,20"/>
 
                 <TextBlock Text="Спасибо всем волонтерам, которые будут помогать нам проводить марафон!" 
                            FontSize="16" Margin="0,20,0,0" TextAlignment="Center" FontStyle="Italic"/>

@@ -112,7 +112,6 @@
                 <Button
             Width="120"
             Height="40"
-            Background="#00903E"
             Click="SaveButton_Click"
             Content="Сохранить"
             FontWeight="Bold"
@@ -122,11 +121,9 @@
             Width="120"
             Height="40"
             Margin="20,0,0,0"
-            Background="#FDC100"
             Click="CancelButton_Click"
             Content="Отмена"
-            FontWeight="Bold"
-            Foreground="Black" />
+            FontWeight="Bold" />
             </StackPanel>
         </StackPanel>
     </Grid>

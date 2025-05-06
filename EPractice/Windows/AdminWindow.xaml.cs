@@ -28,6 +28,7 @@ namespace EPractice.Windows
         public AdminWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new AdminButtonPage());
             page = 0;
             StartTimer();
         }
@@ -51,6 +52,11 @@ namespace EPractice.Windows
         public void OpenEquipment()
         {
             MainFrame.Navigate(new EquipmentPage());
+            page = 1;
+        }
+        public void OpenEquipmentArrival()
+        {
+            MainFrame.Navigate(new EquipmentArrivalPage());
             page = 1;
         }
         public void OpenOrganizations()

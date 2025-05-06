@@ -86,6 +86,7 @@
     <Compile Include="DBConnection\Charity.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBConnection\CharityExtension.cs" />
     <Compile Include="DBConnection\Connection.cs" />
     <Compile Include="DBConnection\Country.cs">
       <DependentUpon>DBModel.tt</DependentUpon>

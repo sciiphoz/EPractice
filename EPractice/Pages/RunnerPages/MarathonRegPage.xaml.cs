@@ -301,5 +301,10 @@ namespace EPractice.Pages.RunnerPages
         {
             CalculateTotalCost();
         }
+
+        private void TxtSum_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

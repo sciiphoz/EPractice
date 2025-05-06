@@ -213,3 +213,5 @@ C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.b
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Windows\CharityWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.baml
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Windows\EquipmentReportWindow.g.cs
+C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Windows\EquipmentReportWindow.baml

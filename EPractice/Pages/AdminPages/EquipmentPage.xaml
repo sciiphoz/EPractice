@@ -11,14 +11,11 @@
     <Grid>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <StackPanel Margin="40,20,40,20">
-                <!-- Title -->
                 <Label Content="ИНВЕНТАРЬ" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold"/>
 
-                <!-- Total Runners -->
                 <TextBlock x:Name="TotalRunnersText" Text="Всего зарегистрировано бегунов на марафон: 0" 
                    FontWeight="Bold" Margin="0,10,0,20" HorizontalAlignment="Center"/>
 
-                <!-- Kit Selection Table -->
                 <DataGrid x:Name="KitSelectionGrid" AutoGenerateColumns="False" IsReadOnly="True"
                   HeadersVisibility="Column" BorderThickness="1" GridLinesVisibility="None"
                   Margin="0,0,0,20" CanUserAddRows="False" CanUserDeleteRows="False">
@@ -32,7 +29,6 @@
                     </DataGrid.Columns>
                 </DataGrid>
 
-                <!-- Inventory Items Table -->
                 <TextBlock Text="Состав комплекта" FontWeight="Bold" Margin="0,10,0,5"/>
                 <DataGrid x:Name="InventoryItemsGrid" AutoGenerateColumns="False" IsReadOnly="True"
                   HeadersVisibility="Column" BorderThickness="1" GridLinesVisibility="None"

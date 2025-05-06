@@ -15,9 +15,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Margin="10">
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <TextBlock Text="Отсортировать:" FontWeight="Bold" Margin="0,0,10,0"/>
-                <ComboBox x:Name="SortComboBox" Width="200" SelectionChanged="SortComboBox_SelectionChanged">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Center">
+                <TextBlock Text="Отсортировать:" FontWeight="Bold" VerticalAlignment="Center" FontSize="16" Margin="0,0,10,0"/>
+                <ComboBox x:Name="SortComboBox" Width="200" Height="25" VerticalContentAlignment="Center" SelectionChanged="SortComboBox_SelectionChanged">
                     <ComboBoxItem Content="Итоговая сумма" Tag="TotalAmount" IsSelected="True"/>
                     <ComboBoxItem Content="Название организации" Tag="CharityName"/>
                     <ComboBoxItem Content="Количество спонсоров" Tag="SponsorsCount"/>
@@ -41,13 +41,13 @@
                 <DataGridTemplateColumn Header="Логотип" Width="Auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding LogoPath}" Width="50" Height="50" Stretch="Uniform"/>
+                            <Image Source="{Binding LogoPath}" Width="75" Height="75" Stretch="Uniform"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Наименование" Binding="{Binding CharityName}" Width="*"/>
-                <DataGridTextColumn Header="Сумма" Binding="{Binding TotalAmount, StringFormat=C}" Width="Auto"/>
-                <DataGridTextColumn Header="Количество спонсоров" Binding="{Binding SponsorsCount}" Width="Auto"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding CharityName}" Width="2*"/>
+                <DataGridTextColumn Header="Сумма" Binding="{Binding TotalAmount, StringFormat=C}" Width="*"/>
+                <DataGridTextColumn Header="Количество спонсоров" Binding="{Binding SponsorsCount}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
