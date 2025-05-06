@@ -42,72 +42,66 @@
             IsReadOnly="True" />
 
                 <Button
-            Grid.Column="1"
-            Width="120"
-            Height="40"
-            Margin="10,0,0,0"
-            Background="#00903E"
-            Click="BrowseButton_Click"
-            Content="Просмотр..."
-            FontWeight="Bold"
-            Foreground="White" />
+                    Grid.Column="1"
+                    Width="120"
+                    Height="40"
+                    Margin="10,0,0,0"
+                    Click="BrowseButton_Click"
+                    Content="Просмотр..."
+                    FontWeight="Bold"
+                    Foreground="White" />
             </Grid>
 
             <!-- Кнопки загрузки/отмены -->
             <StackPanel
-        Margin="0,30,0,0"
-        HorizontalAlignment="Center"
-        Orientation="Horizontal">
+                Margin="0,30,0,0"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
                 <Button
-            Width="120"
-            Height="40"
-            Background="#00903E"
-            Click="ImportButton_Click"
-            Content="Загрузка"
-            FontWeight="Bold"
-            Foreground="White" />
+                    Width="120"
+                    Height="40"
+                    Click="ImportButton_Click"
+                    Content="Загрузка"
+                    FontWeight="Bold"
+                    Foreground="White" />
 
                 <Button
-            Width="120"
-            Height="40"
-            Margin="20,0,0,0"
-            Background="#FDC100"
-            Click="CancelButton_Click"
-            Content="Отмена"
-            FontWeight="Bold"
-            Foreground="Black" />
+                    Width="120"
+                    Height="40"
+                    Margin="20,0,0,0"
+                    Click="CancelButton_Click"
+                    Content="Отмена"
+                    FontWeight="Bold" />
             </StackPanel>
 
             <TextBlock
-        Margin="0,30,0,5"
-        FontSize="14"
-        FontWeight="Bold"
-        Foreground="#241D70"
-        Text="CSV файл должен иметь следующие поля:" />
+                Margin="0,30,0,5"
+                FontSize="20"
+                FontFamily="Sans"
+                FontWeight="Bold"
+                Foreground="#241D70"
+                Text="CSV файл должен иметь следующие поля:" HorizontalAlignment="Center" />
 
             <StackPanel Margin="10">
-                <!--<TextBlock Text="• Email: Адрес электронной почты волонтера" />-->
-                <TextBlock Text="• FirstName: Имя волонтера" />
-                <TextBlock Text="• LastName: Фамилия волонтера" />
-                <TextBlock Text="• CountryCode: Код страны (3 символа)" />
-                <TextBlock Text="• Gender: Пол (Мужской/Женский)" />
+                <TextBlock Text="• FirstName: Имя волонтера" FontSize="18" Margin="0 0 0 5" HorizontalAlignment="Center" />
+                <TextBlock Text="• LastName: Фамилия волонтера" FontSize="18" Margin="0 0 0 5" HorizontalAlignment="Center" />
+                <TextBlock Text="• CountryCode: Код страны (3 символа)" FontSize="18" Margin="0 0 0 5" HorizontalAlignment="Center" />
+                <TextBlock Text="• Gender: Пол (Мужской/Женский)" FontSize="18" Margin="0 0 0 5" HorizontalAlignment="Center" />
             </StackPanel>
 
-            <!-- Лог загрузки -->
             <Border
-        Margin="0,20,0,0"
-        BorderThickness="1"
-        BorderBrush="LightGray"
-        CornerRadius="5"
-        Padding="10"
-        Visibility="Collapsed"
-        x:Name="LogBorder">
+                Margin="0,20,0,0"
+                BorderThickness="1"
+                BorderBrush="LightGray"
+                CornerRadius="5"
+                Padding="10"
+                Visibility="Collapsed"
+                x:Name="LogBorder">
                 <ScrollViewer MaxHeight="200" VerticalScrollBarVisibility="Auto">
                     <TextBlock x:Name="LogTextBlock" TextWrapping="Wrap" />
                 </ScrollViewer>
             </Border>
 
-            <!-- Статистика -->
             <StackPanel Margin="0,10,0,0" Visibility="Collapsed" x:Name="StatsPanel">
                 <TextBlock x:Name="StatsTextBlock" FontWeight="Bold" />
             </StackPanel>

@@ -54,8 +54,8 @@
                     <ComboBoxItem Content="более 70" Tag="Over70"/>
                 </ComboBox>
 
-                <Button Content="Поиск" Grid.Column="4" Grid.Row="1" Background="#FFFDC100" Click="SearchButton_Click" Width="80" Height="30"/>
-                <Button Content="Сбросить" Grid.Column="4" Grid.Row="0" Background="#FFFDC100" Click="ResetFiltersButton_Click" Width="80" Height="30" Margin="5,0,0,5"/>
+                <Button Content="Поиск" Grid.Column="4" Grid.Row="1" Click="SearchButton_Click" Width="80" Height="30"/>
+                <Button Content="Сбросить" Grid.Column="4" Grid.Row="0" Click="ResetFiltersButton_Click" Width="80" Height="30" Margin="0 0 0 5"/>
             </Grid>
         </Border>
         

@@ -17,14 +17,15 @@
         
         <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Margin="10">
             <StackPanel>
-                <TextBlock Text="Карта марафона" FontWeight="Bold" FontSize="16" Margin="0,0,0,5"/>
+                <TextBlock Text="Карта марафона" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" HorizontalAlignment="Center"/>
                 <Button Click="MapButton_Click" Background="Transparent" BorderThickness="0">
                     <Image Source="/Images/MapPhotos/marathon-skills-2016-marathon-map.jpg" 
                            Stretch="Uniform" 
                            Width="280" 
-                           Margin="0,0,0,20"/>
+                           Margin="0 0 0 10"/>
                 </Button>
-                <TextBlock Text="(Нажмите чтобы открыть интерактивную карту)" 
+                <TextBlock Text="(Нажмите чтобы открыть интерактивную карту)"
+                           FontSize="12"
                            FontStyle="Italic" 
                            HorizontalAlignment="Center"
                            Margin="0,0,0,20"/>
@@ -32,7 +33,8 @@
                 <TextBlock Text="Фотографии с прошлых марафонов:" 
                            FontWeight="Bold" 
                            FontSize="16" 
-                           Margin="0,0,0,10"/>
+                           Margin="0,0,0,10" 
+                           HorizontalAlignment="Center" />
 
                 <Image Source="/Images/MapPhotos/banco-banespa.jpg" 
                        Width="280" 

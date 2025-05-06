@@ -14,9 +14,9 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        <Label Grid.ColumnSpan="2" Content="BMR калькулятор" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+        <Label Grid.ColumnSpan="2" Content="BMR калькулятор" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
 
-        <StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" Margin="0 0 0 10">    
                 <Run Text="BMR (Basal Metabolic Rate) - это минимальное количество энергии, расходуемое человеческим организмом для поддержания собственной жизни в покое."/>
                 <LineBreak/>
@@ -51,48 +51,48 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,30">
-                <Button Content="Рассчитать" Width="120" Height="40" Background="#00903E"
-                Foreground="White" FontWeight="Bold" Click="CalculateButton_Click" />
-                <Button Content="Отмена" Width="120" Height="40" Background="#FDC100"
-                Foreground="Black" FontWeight="Bold" Margin="20,0,0,0" Click="CancelButton_Click" />
+                <Button Content="Рассчитать" Width="120" Height="40"
+                FontWeight="Bold" Click="CalculateButton_Click" />
+                <Button Content="Отмена" Width="120" Height="40"
+                FontWeight="Bold" Margin="20,0,0,0" Click="CancelButton_Click" />
             </StackPanel>
         </StackPanel>
 
         <StackPanel Grid.Column="1" VerticalAlignment="Center">
             <StackPanel>
-                <TextBlock Text="Ваш BMR" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <TextBlock Text="Ваш BMR" FontSize="22" FontWeight="Bold" FontFamily="Sans" HorizontalAlignment="Center" Margin="0,0,0,10"/>
 
                 <TextBlock x:Name="BMRTextBlock" Text="1,670" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock Text="Ежедневно тратится калорий" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 20 0"/>
-                    <Button x:Name="InfoButton" Content="i" FontFamily="Segoe UI" FontWeight="Bold" HorizontalAlignment="Right" Width="30" Height="30" Background="#FDC100" BorderBrush="Transparent" Foreground="Black" Click="InfoButton_Click"  ToolTip="Информация об уровнях активности" />
+                    <TextBlock Text="Ежедневно тратится калорий" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 20 0" FontSize="16"/>
+                    <Button x:Name="InfoButton" Content="i" FontFamily="Segoe UI" FontWeight="Bold" HorizontalAlignment="Right" Width="30" Height="30" Click="InfoButton_Click"  ToolTip="Информация об уровнях активности" />
                 </StackPanel>
                 
                 <StackPanel HorizontalAlignment="Center">
                     <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                        <TextBlock Text="Сидячий:" Width="175" FontWeight="Bold" />
-                        <TextBlock x:Name="SedentaryTextBlock" Text="2,004"/>
+                        <TextBlock Text="Сидячий:" Width="175" FontWeight="Bold" FontSize="16" />
+                        <TextBlock x:Name="SedentaryTextBlock" Text="2,004" FontSize="16"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                        <TextBlock Text="Маленькая активность:" Width="175" FontWeight="Bold"/>
-                        <TextBlock x:Name="LightActivityTextBlock" Text="2,296"/>
+                        <TextBlock Text="Маленькая активность:" Width="175" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock x:Name="LightActivityTextBlock" Text="2,296" FontSize="16"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                        <TextBlock Text="Средняя активность:" Width="175" FontWeight="Bold"/>
-                        <TextBlock x:Name="ModerateActivityTextBlock" Text="2,589"/>
+                        <TextBlock Text="Средняя активность:" Width="175" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock x:Name="ModerateActivityTextBlock" Text="2,589" FontSize="16"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                        <TextBlock Text="Сильная активность:" Width="175" FontWeight="Bold"/>
-                        <TextBlock x:Name="HeavyActivityTextBlock" Text="2,881"/>
+                        <TextBlock Text="Сильная активность:" Width="175" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock x:Name="HeavyActivityTextBlock" Text="2,881" FontSize="16"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Максимальная активность:" Width="175" FontWeight="Bold"/>
-                        <TextBlock x:Name="ExtremeActivityTextBlock" Text="3,173"/>
+                        <TextBlock Text="Максимальная активность:" Width="175" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock x:Name="ExtremeActivityTextBlock" Text="3,173" FontSize="16"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

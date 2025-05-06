@@ -26,17 +26,17 @@
             </Grid.RowDefinitions>
 
             <Label Content="Статус:" Grid.Column="0" Grid.Row="0" Margin="0,0,5,0"/>
-            <ComboBox x:Name="StatusComboBox" Grid.Column="1" Grid.Row="0" Margin="0,0,10,5" Width="200"
+            <ComboBox x:Name="StatusComboBox" Grid.Column="1" Grid.Row="0" Margin="0,0,10,5" Width="225" VerticalAlignment="Center"
                 SelectionChanged="Filters_SelectionChanged">
                 <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
-                <ComboBoxItem Content="Registered" Tag="Registered"/>
-                <ComboBoxItem Content="Payment Confirmed" Tag="Payment Confirmed"/>
-                <ComboBoxItem Content="Race Kit Sent" Tag="Race Kit Sent"/>
-                <ComboBoxItem Content="Race Attended" Tag="Race Attended"/>
+                <ComboBoxItem Content="Зарегистрированные" Tag="Registered"/>
+                <ComboBoxItem Content="Подтвердили оплату" Tag="Payment Confirmed"/>
+                <ComboBoxItem Content="Набор отправлен" Tag="Race Kit Sent"/>
+                <ComboBoxItem Content="Участвовавший в забеге" Tag="Race Attended"/>
             </ComboBox>
 
             <Label Content="Дистанция:" Grid.Column="0" Grid.Row="1" Margin="0,5,5,0"/>
-            <ComboBox x:Name="DistanceComboBox" Grid.Column="1" Grid.Row="1" Margin="0,5,10,0" Width="200"
+            <ComboBox x:Name="DistanceComboBox" Grid.Column="1" Grid.Row="1" Margin="0,5,10,0" Width="225" VerticalAlignment="Center"
                 SelectionChanged="Filters_SelectionChanged">
                 <ComboBoxItem Content="Все" Tag="All" IsSelected="True"/>
                 <ComboBoxItem Content="42km полный марафон" Tag="Full"/>
@@ -46,9 +46,9 @@
 
             <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" HorizontalAlignment="Right">
                 <Button Content="Детальная информация (CSV)"
-                Background="#FFFDC100" Click="ExportDetailsButton_Click" Width="200" Height="30" Margin="0,0,0,5"/>
+                Click="ExportDetailsButton_Click" Width="200" Height="30" Margin="0,0,0,5"/>
                 <Button Content="E-mail список"
-                Background="#FFFDC100" Click="ExportEmailsButton_Click" Width="200" Height="30"/>
+                Click="ExportEmailsButton_Click" Width="200" Height="30"/>
             </StackPanel>
         </Grid>
 
@@ -58,8 +58,8 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10">
-                <Label Content="Сортировать:" Margin="0,0,5,0"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0 0 0 10">
+                <Label Content="Сортировать:" Margin="0 0 10 0" VerticalAlignment="Center"/>
                 <ComboBox x:Name="SortComboBox" Width="150" SelectionChanged="SortComboBox_SelectionChanged">
                     <ComboBoxItem Content="Имя" Tag="FirstName"/>
                     <ComboBoxItem Content="Фамилия" Tag="LastName"/>
@@ -67,10 +67,10 @@
                     <ComboBoxItem Content="Статус" Tag="Status"/>
                 </ComboBox>
                 <Button Content="Обновить" 
-                Background="#FFFDC100" Click="RefreshButton_Click" Width="100" Height="30" Margin="10,0,0,0"/>
+                Click="RefreshButton_Click" Width="100" Height="30" Margin="10,0,0,0"/>
             </StackPanel>
 
-            <TextBlock x:Name="TotalRunnersText" Grid.Row="0" Text="Total runners: 0" HorizontalAlignment="Right"/>
+            <TextBlock x:Name="TotalRunnersText" Grid.Row="0" Text="Всего бегунов: 0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
             <DataGrid x:Name="RunnersGrid" Grid.Row="1" AutoGenerateColumns="False" 
               CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True"

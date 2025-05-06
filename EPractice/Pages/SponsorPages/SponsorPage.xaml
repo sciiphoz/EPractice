@@ -43,21 +43,41 @@
                     <Label HorizontalAlignment="Right" FontSize="18">CVC :</Label>
                 </StackPanel>
                 <StackPanel>
-                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 5 0 0"
+                    <TextBox x:Name="SponsorName" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="300" Margin="10 5 0 0"
                              FontSize="18">Ваше имя</TextBox>
-                    <ComboBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 6 0 0"
-                              FontSize="18"></ComboBox>
-                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 6 0 0"
+                    <ComboBox x:Name="RunnersCB" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="300" Margin="10 6 0 0"
+                              FontSize="18" SelectionChanged="RunnersCB_SelectionChanged">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                        Margin="0,0,5,0"
+                                        FontSize="12"
+                                        Text="{Binding Runner.User.FirstName}" />
+                                    <TextBlock
+                                        Margin="0,0,5,0"
+                                        FontSize="12"
+                                        Text="{Binding Runner.User.LastName}" />
+                                    <TextBlock
+                                        Margin="0,0,5,0"
+                                        FontSize="12"
+                                        Text="{Binding RegistrationId, StringFormat='- {0}'}" />
+                                    <TextBlock FontSize="12" Text="{Binding Runner.Country.CountryName, StringFormat='(0)'}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBox x:Name="CardHolderName" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="300" Margin="10 6 0 0"
                              FontSize="18">Владелец карты</TextBox>
-                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="200" Margin="10 8 0 0"
+                    <TextBox x:Name="CardNumTxt" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="300" Margin="10 8 0 0"
                              FontSize="18">1234 1234 1234 1234</TextBox>
                     <StackPanel Orientation="Horizontal" Margin="10 9 0 0">
-                        <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="30"
+                        <TextBox x:Name="CardMonth" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="30"
                                  FontSize="18">01</TextBox>
-                        <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50"
+                        <TextBox x:Name="CardYear" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50"
                                  FontSize="18">2017</TextBox>
                     </StackPanel>
-                    <TextBox VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="10 8 0 0"
+                    <TextBox x:Name="CVCTxt" VerticalContentAlignment="Center" BorderBrush="Gray" BorderThickness="1" Width="50" HorizontalAlignment="Left" Margin="10 8 0 0"
                              FontSize="18">123</TextBox>
                 </StackPanel>
             </StackPanel>
@@ -66,21 +86,29 @@
         <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
             <StackPanel Orientation="Vertical" Margin="0 0 0 20">
                 <Label HorizontalAlignment="Center"
-                       FontFamily="Sans" FontSize="20" FontWeight="SemiBold">Благотворительность</Label>
-                <Label HorizontalAlignment="Center">Фонд кошек</Label>
+                       FontFamily="Sans" FontSize="20" FontWeight="Bold">Благотворительность</Label>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label x:Name="CharityName" HorizontalAlignment="Center" FontSize="20" FontFamily="Arial">Фонд кошек</Label>
+                    <Button
+                        x:Name="Fond"
+                        Width="30"
+                        Margin="25 0 0 0"
+                        Click="Fond_Click"
+                        Content="i" />
+                </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="0 0 0 20">
                 <Label HorizontalAlignment="Center"
                    FontFamily="Sans" FontSize="20" FontWeight="SemiBold">Сумма пожертвования</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 0 0 40">
-                <Button Padding="10 5">-</Button>
-                <TextBox Margin="10 0" VerticalContentAlignment="Center" Padding="25 0">50</TextBox>
-                <Button Padding="10 5">+</Button>
+                <Button x:Name="BtnMinus" Click="BtnMinus_Click" Padding="15 5" FontSize="16" FontWeight="Bold">-</Button>
+                <TextBox x:Name="MoneyTB" Margin="10 0" VerticalContentAlignment="Center" Padding="25 0" FontSize="24">50</TextBox>
+                <Button x:Name="BtnPlus" Click="BtnPlus_Click" Padding="15 5" FontSize="16" FontWeight="Bold">+</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5 0 0">
-                <Button Width="90" Margin="0 0 20 0" Padding="10 5" Click="Button_Click">Заплатить</Button>
-                <Button Width="90" Padding="10 5">Отмена</Button>
+                <Button x:Name="BtnPay" Click="BtnPay_Click" Width="90" Margin="0 0 20 0" Padding="10 5">Заплатить</Button>
+                <Button x:Name="BtnCancel" Click="BtnCancel_Click" Width="90" Padding="10 5">Отмена</Button>
             </StackPanel>
         </StackPanel>
     </Grid>

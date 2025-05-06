@@ -1,4 +1,5 @@
 ﻿using EPractice.Classes;
+using EPractice.DBConnection;
 using EPractice.Pages.SponsorPages;
 using System;
 using System.Collections.Generic;
@@ -30,9 +31,9 @@ namespace EPractice.Windows
             page = 0;
             StartTimer();
         }
-        public void ConfirmSponsor()
+        public void ConfirmSponsor(Sponsorship sponsorship)
         {
-            MainFrame.Navigate(new ConfirmSponsorPage());
+            MainFrame.Navigate(new ConfirmSponsorPage(sponsorship));
             page = 1;
         }
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -52,9 +53,17 @@ namespace EPractice.Windows
                     break;
             }
         }
+
+        public void OpenMainWindow()
+        {
+            page = 0;
+            MainWindow mainWindow = new MainWindow(); 
+            mainWindow.Show();
+            Close();
+        }
+
         private DispatcherTimer timer;
         private DateTime marathonStartDate;
-
         private void UpdateTimeLeft()
         {
             TimeSpan timeLeft = marathonStartDate - DateTime.Now;

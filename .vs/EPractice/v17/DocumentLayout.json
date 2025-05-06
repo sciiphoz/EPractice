@@ -1,22 +1,162 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\212202\\Desktop\\EPractice\\",
+  "WorkspaceRootPath": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\212202\\desktop\\epractice\\epractice\\pages\\runnerpages\\runnerregpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\equipmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\equipmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\imagepathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\equipmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\equipmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\windows\\equipmentreportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\windows\\equipmentreportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\windows\\equipmentreportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\windows\\equipmentreportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\orgeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\orgeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\orgsmanagmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\orgsmanagmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\orgsmanagmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\orgsmanagmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\volunteerimportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\volunteerimportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\volunteerimportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\volunteerimportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\adminpages\\volunteerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\adminpages\\volunteerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\controllerpages\\controllerbuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\controllerpages\\controllerbuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\controllerpages\\runnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\controllerpages\\runnerinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\controllerpages\\runnerinfopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\controllerpages\\runnerinfopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\controllerpages\\sponsorinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\controllerpages\\sponsorinfopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\bmipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\bmipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\bmrpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\bmrpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\comparisonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\comparisonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\infobuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\infobuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\marathonskillspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\marathonskillspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\orgspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\orgspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\orgspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\orgspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\nametoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\nametoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\infopages\\pastrespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\infopages\\pastrespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\marathonregconfirmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\marathonregconfirmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\marathonregpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\marathonregpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\marathonregpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\marathonregpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\mysponsorspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\mysponsorspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\resultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\resultspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\runnerbuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\runnerbuttonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\runnerpages\\runnerregpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\runnerregpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\212202\\desktop\\epractice\\epractice\\windows\\sponsorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\windows\\sponsorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\interactivemappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\interactivemappage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\212202\\desktop\\epractice\\epractice\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\authpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\authpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\212202\\desktop\\epractice\\epractice\\pages\\runnerpages\\runnerregpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\runnerpages\\runnerregpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\sponsorpages\\sponsorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\sponsorpages\\sponsorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\windows\\sponsorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\windows\\sponsorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\sponsorpages\\sponsorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\sponsorpages\\sponsorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\sponsorpages\\confirmsponsorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\sponsorpages\\confirmsponsorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|c:\\users\\sciiphoz\\desktop\\epractice\\epractice\\pages\\sponsorpages\\confirmsponsorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A0CEEEC-0BA8-44EF-9FFE-F9B5882A4D27}|EPractice\\EPractice.csproj|solutionrelative:epractice\\pages\\sponsorpages\\confirmsponsorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +166,486 @@
       "DocumentGroups": [
         {
           "DockedWidth": 241,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\App.xaml",
-              "RelativeDocumentMoniker": "EPractice\\App.xaml",
-              "ToolTip": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\App.xaml",
-              "RelativeToolTip": "EPractice\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T16:53:15.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SponsorWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Windows\\SponsorWindow.xaml",
-              "RelativeDocumentMoniker": "EPractice\\Windows\\SponsorWindow.xaml",
-              "ToolTip": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Windows\\SponsorWindow.xaml",
-              "RelativeToolTip": "EPractice\\Windows\\SponsorWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T16:52:59.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RunnerRegPage.xaml",
-              "DocumentMoniker": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
-              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
-              "ToolTip": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
-              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T16:21:18.933Z",
+              "DocumentIndex": 4,
+              "Title": "EquipmentReportWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\EquipmentReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Windows\\EquipmentReportWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\EquipmentReportWindow.xaml.cs",
+              "RelativeToolTip": "EPractice\\Windows\\EquipmentReportWindow.xaml.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:34:10.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RunnerRegPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml.cs",
-              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml.cs",
-              "ToolTip": "C:\\Users\\212202\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml.cs",
-              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAD4v94AAAANAAAAAAAAAA==",
+              "Title": "EquipmentReportWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\EquipmentReportWindow.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Windows\\EquipmentReportWindow.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\EquipmentReportWindow.xaml",
+              "RelativeToolTip": "EPractice\\Windows\\EquipmentReportWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:33:07.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pages\\AdminPages\\EquipmentPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\EquipmentPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\EquipmentPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\EquipmentPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\EquipmentPage.xaml.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAFwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:09:34.101Z",
+              "WhenOpened": "2025-05-06T07:25:29.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EquipmentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\EquipmentPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\EquipmentPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\EquipmentPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\EquipmentPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:25:25.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImagePathConverter.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\ImagePathConverter.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\ImagePathConverter.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\ImagePathConverter.cs",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\ImagePathConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:25:24.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrgEditPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgEditPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\OrgEditPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgEditPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\OrgEditPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:25:11.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pages\\AdminPages\\OrgsManagmentPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwDQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:25:09.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrgsManagmentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\OrgsManagmentPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:24:53.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pages\\AdminPages\\VolunteerImportPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:22:58.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VolunteerImportPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\VolunteerImportPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:22:16.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VolunteersPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteersPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AdminPages\\VolunteersPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AdminPages\\VolunteersPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AdminPages\\VolunteersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:21:10.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ControllerButtonPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\ControllerButtonPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\ControllerPages\\ControllerButtonPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\ControllerButtonPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\ControllerPages\\ControllerButtonPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:20:57.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RunnerInfoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwE0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:18:01.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RunnerInfoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\ControllerPages\\RunnerInfoPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:17:28.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SponsorInfoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\SponsorInfoPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\ControllerPages\\SponsorInfoPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\ControllerPages\\SponsorInfoPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\ControllerPages\\SponsorInfoPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:17:25.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BMIPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\BMIPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\BMIPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\BMIPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\BMIPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:13:49.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BMRPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\BMRPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\BMRPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\BMRPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\BMRPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:13:10.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ComparisonPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\ComparisonPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\ComparisonPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\ComparisonPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\ComparisonPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:13:06.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InfoButtonPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\InfoButtonPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\InfoButtonPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\InfoButtonPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\InfoButtonPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:13:04.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MarathonSkillsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\MarathonSkillsPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\MarathonSkillsPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\MarathonSkillsPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\MarathonSkillsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:11:55.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrgsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\OrgsPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\OrgsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\OrgsPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\OrgsPage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:11:50.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NameToImageConverter.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\NameToImageConverter.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\NameToImageConverter.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\NameToImageConverter.cs",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\NameToImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:11:33.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrgsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\OrgsPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\OrgsPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\OrgsPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\OrgsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:11:31.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PastResPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\PastResPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InfoPages\\PastResPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InfoPages\\PastResPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InfoPages\\PastResPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:10:28.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MarathonRegConfirmPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegConfirmPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\MarathonRegConfirmPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegConfirmPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\MarathonRegConfirmPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:10:23.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MarathonRegPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T07:09:56.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MarathonRegPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\MarathonRegPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:09:16.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MySponsorsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MySponsorsPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\MySponsorsPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\MySponsorsPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\MySponsorsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:08:03.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegistrationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RegistrationPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\RegistrationPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RegistrationPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\RegistrationPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:07:30.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ResultsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\ResultsPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\ResultsPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\ResultsPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\ResultsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:06:38.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RunnerButtonPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerButtonPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\RunnerButtonPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerButtonPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\RunnerButtonPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:06:36.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RunnerRegPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\RunnerPages\\RunnerRegPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:05:11.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "InteractiveMapPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InteractiveMapPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\InteractiveMapPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\InteractiveMapPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\InteractiveMapPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:01:33.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AuthPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AuthPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\AuthPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\AuthPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\AuthPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T07:01:28.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ConfirmSponsorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T06:57:37.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ConfirmSponsorPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\SponsorPages\\ConfirmSponsorPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T06:55:08.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SponsorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\SponsorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Windows\\SponsorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Windows\\SponsorWindow.xaml.cs",
+              "RelativeToolTip": "EPractice\\Windows\\SponsorWindow.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T06:09:59.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SponsorPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\SponsorPage.xaml.cs",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\SponsorPages\\SponsorPage.xaml.cs",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\SponsorPage.xaml.cs",
+              "RelativeToolTip": "EPractice\\Pages\\SponsorPages\\SponsorPage.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T06:04:16.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SponsorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\SponsorPage.xaml",
+              "RelativeDocumentMoniker": "EPractice\\Pages\\SponsorPages\\SponsorPage.xaml",
+              "ToolTip": "C:\\Users\\sciiphoz\\Desktop\\EPractice\\EPractice\\Pages\\SponsorPages\\SponsorPage.xaml",
+              "RelativeToolTip": "EPractice\\Pages\\SponsorPages\\SponsorPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-06T06:01:22.374Z",
               "EditorCaption": ""
             }
           ]

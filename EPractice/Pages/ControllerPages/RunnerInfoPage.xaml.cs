@@ -75,7 +75,7 @@ namespace EPractice.Pages.ControllerPages
                 var runners = GetFilteredRunners(statusFilter, distanceFilter, sortField);
 
                 // Обновляем общее количество
-                TotalRunnersText.Text = $"Total runners: {runners.Count}";
+                TotalRunnersText.Text = $"Всего бегунов: {runners.Count}";
 
                 if (runners.Any())
                 {

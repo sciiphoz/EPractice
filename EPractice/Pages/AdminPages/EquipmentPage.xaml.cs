@@ -29,150 +29,98 @@ namespace EPractice.Pages.AdminPages
 
         private void LoadInventoryData()
         {
-            //try
-            //{
-            //    using (var context = Connection.marathonEntities)
-            //    {
-            //        // Load total runners count
-            //        int totalRunners = context.Registration.Count();
-            //        TotalRunnersText.Text = $"Всего зарегистрировано бегунов на марафон: {totalRunners}";
+            try
+            {
+                using (var context = Connection.marathonEntities)
+                {
+                    int totalRunners = context.Registration.Count();
+                    TotalRunnersText.Text = $"Всего зарегистрировано бегунов на марафон: {totalRunners}";
 
-            //        // Load kit selection data
-            //        var kitSelection = new List<KitSelectionViewModel>
-            //        {
-            //            new KitSelectionViewModel
-            //            {
-            //                KitName = "Выбрало данный вариант",
-            //                TypeA = context.Registration.Count(r => r.RaceKitOptionId == "A"),
-            //                TypeB = context.Registration.Count(r => r.RaceKitOptionId == "B"),
-            //                TypeC = context.Registration.Count(r => r.RaceKitOptionId == "C"),
-            //                Total = totalRunners,
-            //                Remaining = 0 // Not applicable for this row
-            //            }
-            //        };
-            //        KitSelectionGrid.ItemsSource = kitSelection;
+                    var kitSelection = new List<KitSelectionViewModel>
+                    {
+                        new KitSelectionViewModel
+                        {
+                            KitName = "Выбрало данный вариант",
+                            TypeA = context.Registration.Count(r => r.RaceKitOptionId == "A"),
+                            TypeB = context.Registration.Count(r => r.RaceKitOptionId == "B"),
+                            TypeC = context.Registration.Count(r => r.RaceKitOptionId == "C"),
+                            Total = totalRunners,
+                            Remaining = 0 // Not applicable for this row
+                        }
+                    };
+                    KitSelectionGrid.ItemsSource = kitSelection;
 
-            //        // Load inventory items data
-            //        var inventoryItems = new List<InventoryItemViewModel>();
+                    var inventoryItems = new List<InventoryItemViewModel>();
 
-            //        // Get all inventory items
-            //        var items = context.InventoryItem.ToList();
+                    var items = context.InventoryItem.ToList();
 
-            //        foreach (var item in items)
-            //        {
-            //            var viewModel = new InventoryItemViewModel
-            //            {
-            //                ItemName = item.ItemName,
-            //                Remaining = item.CurrentStock.ToString()
-            //            };
+                    foreach (var item in items)
+                    {
+                        var viewModel = new InventoryItemViewModel
+                        {
+                            ItemName = item.ItemName,
+                            Remaining = item.CurrentStock.ToString()
+                        };
 
-            //            // Check which kits include this item
-            //            var kitItems = context.KitItem
-            //                .Where(ki => ki.InventoryItemId == item.InventoryItemId)
-            //                .ToList();
+                        var kitItems = context.KitItem
+                            .Where(ki => ki.InventoryItemId == item.InventoryItemId)
+                            .ToList();
 
-            //            int totalNeeded = 0;
+                        int totalNeeded = 0;
 
-            //            // Check for Type A
-            //            var typeA = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "A");
-            //            if (typeA != null)
-            //            {
-            //                viewModel.TypeA = "✔";
-            //                totalNeeded += typeA.Quantity * kitSelection[0].TypeA;
-            //            }
-            //            else
-            //            {
-            //                viewModel.TypeA = "-";
-            //            }
+                        var typeA = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "A");
+                        if (typeA != null)
+                        {
+                            viewModel.TypeA = "✔";
+                            totalNeeded += typeA.Quantity * kitSelection[0].TypeA;
+                        }
+                        else
+                        {
+                            viewModel.TypeA = "-";
+                        }
 
-            //            // Check for Type B
-            //            var typeB = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "B");
-            //            if (typeB != null)
-            //            {
-            //                viewModel.TypeB = "✔";
-            //                totalNeeded += typeB.Quantity * kitSelection[0].TypeB;
-            //            }
-            //            else
-            //            {
-            //                viewModel.TypeB = "-";
-            //            }
+                        var typeB = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "B");
+                        if (typeB != null)
+                        {
+                            viewModel.TypeB = "✔";
+                            totalNeeded += typeB.Quantity * kitSelection[0].TypeB;
+                        }
+                        else
+                        {
+                            viewModel.TypeB = "-";
+                        }
 
-            //            // Check for Type C
-            //            var typeC = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "C");
-            //            if (typeC != null)
-            //            {
-            //                viewModel.TypeC = "✔";
-            //                totalNeeded += typeC.Quantity * kitSelection[0].TypeC;
-            //            }
-            //            else
-            //            {
-            //                viewModel.TypeC = "-";
-            //            }
+                        var typeC = kitItems.FirstOrDefault(ki => ki.RaceKitOptionId == "C");
+                        if (typeC != null)
+                        {
+                            viewModel.TypeC = "✔";
+                            totalNeeded += typeC.Quantity * kitSelection[0].TypeC;
+                        }
+                        else
+                        {
+                            viewModel.TypeC = "-";
+                        }
 
-            //            viewModel.Total = totalNeeded.ToString();
-            //            inventoryItems.Add(viewModel);
-            //        }
+                        viewModel.Total = totalNeeded.ToString();
+                        inventoryItems.Add(viewModel);
+                    }
 
-            //        InventoryItemsGrid.ItemsSource = inventoryItems;
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Ошибка при загрузке данных инвентаря: {ex.Message}");
-            //}
+                    InventoryItemsGrid.ItemsSource = inventoryItems;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных инвентаря: {ex.Message}");
+            }
         }
 
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
-        }
-
-        private void LogoutButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new MainWindow());
-        }
-
-        /* private void ReportButton_Click(object sender, RoutedEventArgs e)
-         {
-             try
-             {
-                 using (var context = Connection.marathonEntities)
-                 {
-                     // Create a Print Dialog
-                     PrintDialog printDialog = new PrintDialog();
-                     if (printDialog.ShowDialog() == true)
-                     {
-                         // Create a FlowDocument for the report
-                         FlowDocument document = CreateInventoryReportDocument(context);
-
-                         // Set document properties
-                         document.PageHeight = printDialog.PrintableAreaHeight;
-                         document.PageWidth = printDialog.PrintableAreaWidth;
-                         document.PagePadding = new Thickness(50);
-                         document.ColumnGap = 0;
-                         document.ColumnWidth = printDialog.PrintableAreaWidth;
-
-                         // Create IDocumentPaginatorSource from FlowDocument
-                         IDocumentPaginatorSource paginatorSource = document;
-
-                         // Print the document
-                         printDialog.PrintDocument(paginatorSource.DocumentPaginator, "Отчет по инвентарю");
-                     }
-                 }
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show($"Ошибка при генерации отчета: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-             }
-         }*/
         private void ReportButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                // Show the report preview window
-                //var reportWindow = new InventoryReportWindow();
-                //reportWindow.Owner = Window.GetWindow(this);
-                //reportWindow.ShowDialog();
+                var reportWindow = new EquipmentReportWindow();
+                reportWindow.Owner = Window.GetWindow(this);
+                reportWindow.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -181,96 +129,89 @@ namespace EPractice.Pages.AdminPages
             }
         }
 
-        //private FlowDocument CreateInventoryReportDocument(MarathonEntities context)
-        //{
-        //    FlowDocument document = new FlowDocument();
+        private FlowDocument CreateInventoryReportDocument(MarathonEntities context)
+        {
+            FlowDocument document = new FlowDocument();
 
-        //    // Add title
-        //    Paragraph title = new Paragraph(new Run("ОТЧЕТ ПО ИНВЕНТАРЮ MARATHON SKILLS 2025"))
-        //    {
-        //        FontSize = 18,
-        //        FontWeight = FontWeights.Bold,
-        //        TextAlignment = TextAlignment.Center,
-        //        Margin = new Thickness(0, 0, 0, 20)
-        //    };
-        //    document.Blocks.Add(title);
+            Paragraph title = new Paragraph(new Run("ОТЧЕТ ПО ИНВЕНТАРЮ MARATHON SKILLS 2025"))
+            {
+                FontSize = 18,
+                FontWeight = FontWeights.Bold,
+                TextAlignment = TextAlignment.Center,
+                Margin = new Thickness(0, 0, 0, 20)
+            };
+            document.Blocks.Add(title);
 
-        //    // Add date
-        //    Paragraph date = new Paragraph(new Run($"Дата формирования: {DateTime.Now:dd.MM.yyyy HH:mm}"))
-        //    {
-        //        FontSize = 12,
-        //        TextAlignment = TextAlignment.Left,
-        //        Margin = new Thickness(0, 0, 0, 10)
-        //    };
-        //    document.Blocks.Add(date);
+            Paragraph date = new Paragraph(new Run($"Дата формирования: {DateTime.Now:dd.MM.yyyy HH:mm}"))
+            {
+                FontSize = 12,
+                TextAlignment = TextAlignment.Left,
+                Margin = new Thickness(0, 0, 0, 10)
+            };
+            document.Blocks.Add(date);
 
-        //    // Create a table for the report data
-        //    Table table = new Table();
-        //    document.Blocks.Add(table);
+            Table table = new Table();
+            document.Blocks.Add(table);
 
-        //    table.CellSpacing = 0;
-        //    table.BorderBrush = Brushes.Black;
-        //    table.BorderThickness = new Thickness(1, 1, 0, 0);
+            table.CellSpacing = 0;
+            table.BorderBrush = Brushes.Black;
+            table.BorderThickness = new Thickness(1, 1, 0, 0);
 
-        //    // Define columns
-        //    for (int i = 0; i < 5; i++)
-        //    {
-        //        table.Columns.Add(new TableColumn());
-        //    }
+            for (int i = 0; i < 5; i++)
+            {
+                table.Columns.Add(new TableColumn());
+            }
 
-        //    // Header
-        //    TableRowGroup headerGroup = new TableRowGroup();
-        //    table.RowGroups.Add(headerGroup);
-        //    TableRow headerRow = new TableRow { Background = Brushes.LightGray };
-        //    headerGroup.Rows.Add(headerRow);
+            TableRowGroup headerGroup = new TableRowGroup();
+            table.RowGroups.Add(headerGroup);
+            TableRow headerRow = new TableRow { Background = Brushes.LightGray };
+            headerGroup.Rows.Add(headerRow);
 
-        //    headerRow.Cells.Add(CreateHeaderCell("Наименование"));
-        //    headerRow.Cells.Add(CreateHeaderCell("Требуется"));
-        //    headerRow.Cells.Add(CreateHeaderCell("На складе"));
-        //    headerRow.Cells.Add(CreateHeaderCell("Минимум"));
-        //    headerRow.Cells.Add(CreateHeaderCell("К заказу"));
+            headerRow.Cells.Add(CreateHeaderCell("Наименование"));
+            headerRow.Cells.Add(CreateHeaderCell("Требуется"));
+            headerRow.Cells.Add(CreateHeaderCell("На складе"));
+            headerRow.Cells.Add(CreateHeaderCell("Минимум"));
+            headerRow.Cells.Add(CreateHeaderCell("К заказу"));
 
-        //    // Data rows
-        //    var items = context.InventoryItem.ToList();
-        //    TableRowGroup dataGroup = new TableRowGroup();
-        //    table.RowGroups.Add(dataGroup);
+            var items = context.InventoryItem.ToList();
+            TableRowGroup dataGroup = new TableRowGroup();
+            table.RowGroups.Add(dataGroup);
 
-        //    foreach (var item in items)
-        //    {
-        //        var kitItems = context.KitItem
-        //            .Where(ki => ki.InventoryItemId == item.InventoryItemId)
-        //            .ToList();
+            foreach (var item in items)
+            {
+                var kitItems = context.KitItem
+                    .Where(ki => ki.InventoryItemId == item.InventoryItemId)
+                    .ToList();
 
-        //        int totalNeeded = 0;
-        //        var registrations = context.Registration.ToList();
+                int totalNeeded = 0;
+                var registrations = context.Registration.ToList();
 
-        //        foreach (var ki in kitItems)
-        //        {
-        //            totalNeeded += ki.Quantity * registrations.Count(r => r.RaceKitOptionId == ki.RaceKitOptionId);
-        //        }
+                foreach (var ki in kitItems)
+                {
+                    totalNeeded += ki.Quantity * registrations.Count(r => r.RaceKitOptionId == ki.RaceKitOptionId);
+                }
 
-        //        int toOrder = Math.Max(0, totalNeeded - item.CurrentStock);
+                int toOrder = Math.Max(0, totalNeeded - item.CurrentStock);
 
-        //        TableRow row = new TableRow();
-        //        dataGroup.Rows.Add(row);
+                TableRow row = new TableRow();
+                dataGroup.Rows.Add(row);
 
-        //        row.Cells.Add(CreateDataCell(item.ItemName));
-        //        row.Cells.Add(CreateDataCell(totalNeeded.ToString()));
-        //        row.Cells.Add(CreateDataCell(item.CurrentStock.ToString()));
-        //        row.Cells.Add(CreateDataCell(item.MinimumStock.ToString()));
+                row.Cells.Add(CreateDataCell(item.ItemName));
+                row.Cells.Add(CreateDataCell(totalNeeded.ToString()));
+                row.Cells.Add(CreateDataCell(item.CurrentStock.ToString()));
+                row.Cells.Add(CreateDataCell(item.MinimumStock.ToString()));
 
-        //        TableCell orderCell = CreateDataCell(toOrder.ToString());
-        //        if (toOrder > 0)
-        //        {
-        //            orderCell.Background = Brushes.LightPink;
-        //            orderCell.FontWeight = FontWeights.Bold;
-        //        }
-        //        row.Cells.Add(orderCell);
-        //    }
+                TableCell orderCell = CreateDataCell(toOrder.ToString());
+                if (toOrder > 0)
+                {
+                    orderCell.Background = Brushes.LightPink;
+                    orderCell.FontWeight = FontWeights.Bold;
+                }
+                row.Cells.Add(orderCell);
+            }
 
-        //    // ✅ Вот добавленный возврат
-        //    return document;
-        //}
+            return document;
+        }
 
         private TableCell CreateHeaderCell(string text)
         {
@@ -297,9 +238,8 @@ namespace EPractice.Pages.AdminPages
 
         private void ArrivalButton_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to inventory arrival page
-            //NavigationService.Navigate(new InventoryArrivalPage());
-            // MessageBox.Show("Функция прихода инвентаря будет реализована позже", "Приход инвентаря", MessageBoxButton.OK, MessageBoxImage.Information);
+            NavigationService.Navigate(new EquipmentArrivalPage());
+            MessageBox.Show("Функция прихода инвентаря будет реализована позже", "Приход инвентаря", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 

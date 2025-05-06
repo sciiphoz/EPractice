@@ -1,4 +1,5 @@
-﻿using EPractice.Windows;
+﻿using EPractice.DBConnection;
+using EPractice.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,26 @@ namespace EPractice.Pages.SponsorPages
     /// </summary>
     public partial class ConfirmSponsorPage : Page
     {
+        Sponsorship sponsorship;
+        Charity charity;
+
         private SponsorWindow sponsorWindow;
-        public ConfirmSponsorPage()
+        public ConfirmSponsorPage(Sponsorship sponsorshipData)
         {
             InitializeComponent();
+
+            sponsorship = sponsorshipData;
+            
+            Registration begun = sponsorship.Registration;
+            User beg = begun.Runner.User;
+            Country BegunCountry = begun.Runner.Country;
+
+            RunnerTxt.Content = $"{beg.FirstName} {beg.LastName}({begun.RegistrationId}) из {BegunCountry.CountryName}";
+            MoneyTxt.Content = $"${sponsorship.Amount}";
+            
+            charity = sponsorship.Registration.Charity;
+            
+            CharityTxt.Content = charity.CharityName;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

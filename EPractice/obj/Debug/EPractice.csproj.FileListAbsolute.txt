@@ -133,7 +133,6 @@ C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\AuthWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\ContactsWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\ControllerWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\InfoWindow.g.cs
-C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RoleWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RunnerWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\SponsorWindow.g.cs
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\App.g.cs
@@ -180,7 +179,6 @@ C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\AuthWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\ContactsWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\ControllerWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\InfoWindow.baml
-C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RoleWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\RunnerWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Windows\SponsorWindow.baml
 C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\EPractice.g.resources
@@ -213,3 +211,5 @@ C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\InfoPages\OrgsPage.b
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\AdminPages\VolunteerImportPage.baml
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.baml
 C:\Users\212202\Desktop\EPractice\EPractice\obj\Debug\Windows\CharityWindow.baml
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.g.cs
+C:\Users\sciiphoz\Desktop\EPractice\EPractice\obj\Debug\Pages\InteractiveMapPage.baml

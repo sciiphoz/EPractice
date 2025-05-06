@@ -79,15 +79,14 @@
             Text="{Binding NewLogoPath, Mode=OneWay}" />
 
                 <Button
-            Grid.Column="1"
-            Width="120"
-            Height="40"
-            Margin="10,0,0,0"
-            Background="#00903E"
-            Click="BrowseLogoButton_Click"
-            Content="Просмотр..."
-            FontWeight="Bold"
-            Foreground="White" />
+                    Grid.Column="1"
+                    Width="120"
+                    Height="40"
+                    Margin="10,0,0,0"
+                    Click="BrowseLogoButton_Click"
+                    Content="Просмотр..."
+                    FontWeight="Bold"
+                    Foreground="White" />
             </Grid>
 
             <!-- Текущий логотип -->
